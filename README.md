@@ -16,16 +16,16 @@ The repository contains the following:
 build/
 						Folder used by TSTool to create products for publication.
 data/                           		Folder containing data files.
-  Colorado-Municipalities.xlsx     	Simple Excel file containing core data.
-  Colorado-Municipalities.csv      	The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.
+  Colorado-Municipalities.xlsx     		Simple Excel file containing core data.
+  Colorado-Municipalities.csv      		The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.
   Municipality-County-Relate.csv		The Excel file contents from the Municipality_County_Relate worksheet converted to a csv file, useful for automated processing.
 data-orig/					Folder containing original data files downloaded from agency websites.
   Colorado-FIPS-Places.xlsx			The data file containing original data download from the U.S. Census Bureau containing FIPS IDs.
   Colorado-GNIS-Civil.csv			The data file containing original data download from the Geographic Names Information System containing GNIS IDs.
-  Colorado-DOLA-LocalGovt-IDs-Municipality.csv		The data file that is a copy of the Department of Local Affairs' Local Government Information System website that contains local government IDs (DOLA_LG_ID).
+  Colorado-DOLA-LocalGovt-IDs-Municipality.csv	The data file that is a copy of the Department of Local Affairs' Local Government Information System website that contains local government IDs (DOLA_LG_ID).
   Colorado-PWS-IDs.csv				The data file containing original data download from the EPA's Safe Drinking Water Information System containing PWS IDs.
-  Colorado-Municipal-Boundaries.geojson			Exported spatial data file from the Colorado Information Marketplace's Municipal Boundaries in Colorado map.
-  Colorado-Municipality-PointLocation.csv		Saved attribute table of Colorado-Municipal-Boundaries.geojson that contains coordinates of the centroid of each municipality's boundaries.
+  Colorado-Municipal-Boundaries.geojson		Exported spatial data file from the Colorado Information Marketplace's Municipal Boundaries in Colorado map.
+  Colorado-Municipality-PointLocation.csv	Saved attribute table of Colorado-Municipal-Boundaries.geojson that contains coordinates of the centroid of each municipality's boundaries.
 doc/
   ?                             		Additional documentation for the dataset.
 TSTool/                         		TSTool software command files to process data into useful forms.
@@ -93,8 +93,7 @@ The data sources for this dataset are listed below.
 * Data available from the [U.S. Census Bureau](https://www.census.gov/geo/reference/codes/place.html) includes municipal Federal Information Processing Standard (FIPS) codes.
 * The U.S. Geological Survey (USGS)'s [Geographic Names Information System (GNIS)](https://geonames.usgs.gov/apex/f?p=138:1:9185633219989) is the Federal and national standard for geographic nomenclature.  The USGS developed the GNIS in support of the U.S. Board on Geographic Names as the official repository of domestic geographic names data.  OWF manually cross-referenced the Feature Name column to the MunicipalityName.
 * The Colorado Department of Local Affairs (DOLA)'s [Local Government Information System](https://dola.colorado.gov/lgis/municipalities.jsf) uses a local government ID (LG ID).  Data were copied directly from the website and pasted into Excel.  OWF manually cross-referenced the LG ID to the MunicipalityName.  OWF is using DOLA_LG_ID instead of LG ID to add more description to the identifier.
-* The Environmental Protection Agency (EPA)'s [Safe Drinking Water Information System (SDWIS)](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) contains information about Public Water System IDs (PWS ID).  PWS IDs are used for water quality reports.  The Colorado Department of Public Health and Environment (CDPHE)'s Water Quality Control Division also uses the PWS ID.  Not all municipalities have a PWS ID.  
-In these instances, the municipality's water and sanitation district may have a PWS ID, or the municipality may be served by a water company that has a PWS ID.  OWF manually cross-referenced the PWS Name to the MunicipalityName.
+* The Environmental Protection Agency (EPA)'s [Safe Drinking Water Information System (SDWIS)](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) contains information about Public Water System IDs (PWS ID).  PWS IDs are used for water quality reports.  The Colorado Department of Public Health and Environment (CDPHE)'s Water Quality Control Division also uses the PWS ID.  Not all municipalities have a PWS ID.  In these instances, the municipality's water and sanitation district may have a PWS ID, or the municipality may be served by a water company that has a PWS ID.  OWF manually cross-referenced the PWS Name to the MunicipalityName.
 * The BNDSS ID is from the Basin Needs Decision Support System, which was initially developed as a project for the Colorado Water Conservation Board (CWCB) from 2009-2011.  The BNDSS resulted in a prototype gap analysis 
 (the difference between water demand and available supply for Colorado) and a prototype database and website to manage water provider and Identified Projects and Processes data.  The BNDSS ID is included in this dataset
 so that it can be potentially linked to datasets that result from the Statewide Water Supply Initiative (SWSI) Update.
