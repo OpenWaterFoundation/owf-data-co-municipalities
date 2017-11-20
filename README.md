@@ -20,7 +20,7 @@ data/                           		Folder containing data files.
   Colorado-Municipalities.csv      	The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.
   Municipality-County-Relate.csv		The Excel file contents from the Municipality_County_Relate worksheet converted to a csv file, useful for automated processing.
 data-orig/					Folder containing original data files downloaded from agency websites.
-  Colorado-FIPS-Places.xlsx			The data file containing original data download from the U.S. Census Bureau containing FIPS IDs.
+  Colorado-FIPS-Places.csv			The data file containing original data download from the U.S. Census Bureau containing FIPS IDs.
   Colorado-GNIS-Civil.csv			The data file containing original data download from the Geographic Names Information System containing GNIS IDs.
   Colorado-DOLA-LocalGovt-IDs-Municipality.csv		The data file that is a copy of the Department of Local Affairs' Local Government Information System website that contains local government IDs (DOLA_LG_ID).
   Colorado-PWS-IDs.csv				The data file containing original data download from the EPA's Safe Drinking Water Information System containing PWS IDs.
@@ -28,7 +28,8 @@ data-orig/					Folder containing original data files downloaded from agency webs
   Colorado-Municipality-PointLocation.csv		Saved attribute table of Colorado-Municipal-Boundaries.geojson that contains coordinates of the centroid of each municipality's boundaries.
 doc/
   ?                             		Additional documentation for the dataset.
-TSTool/                         		TSTool software command files to process data into useful forms.
+analysis/                         		TSTool software command files to process data into useful forms.
+  Process-xlsx-to-csv.TSTool			TSTool command file that processes the core dataset from .xlsx to .csv.
   README.md                     		Explanation of TSTool command files used to process the core data into other products.
 ```
 
@@ -52,7 +53,7 @@ The core Excel workbook that serves as the master data contains the following da
 * **County_CSV** -- county in which the municipality is contained.  Several municipalities are in more than one county.  In these cases, each county is listed in alphabetical order, separated by commas.  Municipalities in multiple counties can also be found in the **Municipality_County_Relate** worksheet.
 * **NumCounty** -- number of counties within the municipality's boundaries.  This is a quick way to determine if the municipality is in multiple counties.
 * **IBCC_Basin_CSV --  TO BE ADDED**
-* **NumBasin --  TO BE ADDED**
+* **Num_IBCC_Basin --  TO BE ADDED**
 * **Latitude** -- latitude of municipality's point location in decimal degrees
 * **Longitude** -- longitude of municipality's point location in decimal degrees
 * **Lat_Long_Flag** -- indication of how latitude and longitude were determined
@@ -87,11 +88,11 @@ Other worksheets within the workbook contain the following:
 
 ### Colorado-Municipalities.csv Contents ###
 
-This file is the **Municipality** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file.
+This file is the **Municipality** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
 ### Municipality_County_Relate.csv Contents ###
 
-This file is the **Municipality_County_Relate** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file.
+This file is the **Municipality_County_Relate** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
 ## Attribution ##
 
