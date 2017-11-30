@@ -10,27 +10,25 @@ OWF has created and is maintaining this dataset to facilitate work on various da
 The repository contains the following:
 
 ```text
-.gitignore                      		Git configuration file to ignore files that should not be committed to the repository.
-.gitattributes                  		Git configuration file indicate repository configuration, in particular handling
-												of line-ending and binary files.
-build/
-						Folder used by TSTool to create products for publication.
-data/                           		Folder containing data files.
-  Colorado-Municipalities.xlsx     	Simple Excel file containing core data.
-  Colorado-Municipalities.csv      	The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.
-  Municipality-County-Relate.csv		The Excel file contents from the Municipality_County_Relate worksheet converted to a csv file, useful for automated processing.
+analysis/                         		TSTool software command files to process data into useful forms.
+  Process-xlsx-to-csv.TSTool			TSTool command file that processes the core dataset from .xlsx to .csv.
+  Process-xlsx-to-geojson.TSTool		TSTool command file that processes the core dataset from .xlsx to .geojson.  
 data-orig/					Folder containing original data files downloaded from agency websites.
   Colorado-FIPS-Places.csv			The data file containing original data download from the U.S. Census Bureau containing FIPS IDs.
   Colorado-GNIS-Civil.csv			The data file containing original data download from the Geographic Names Information System containing GNIS IDs.
   Colorado-DOLA-LocalGovt-IDs-Municipality.csv		The data file that is a copy of the Department of Local Affairs' Local Government Information System website that contains local government IDs (DOLA_LG_ID).
   Colorado-PWS-IDs.csv				The data file containing original data download from the EPA's Safe Drinking Water Information System containing PWS IDs.
-  Colorado-Municipal-Boundaries.geojson			Exported spatial data file from the Colorado Information Marketplace's Municipal Boundaries in Colorado map.
-  Colorado-Municipality-PointLocation.csv		Saved attribute table of Colorado-Municipal-Boundaries.geojson that contains coordinates of the centroid of each municipality's boundaries.
+  Colorado-Municipality-PointLocation.csv		Saved attribute table of [Municipal Boundaries in Colorado](https://data.colorado.gov/Municipal/Municipal-Boundaries-in-Colorado/u943-ics6) geojson file that contains coordinates of the centroid of each municipality's boundaries.
+data/                           		Folder containing data files.
+  Colorado-Municipalities.xlsx     	Simple Excel file containing core data.
+  Colorado-Municipalities.csv      	The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.
+  Colorado-Municipalities.geojson	The Excel file contents from the Municipality worksheet converted to a geojson file, useful for mapping applications.
+  Municipality-County-Relate.csv		The Excel file contents from the Municipality_County_Relate worksheet converted to a csv file, useful for automated processing.
 doc/
   ?                             		Additional documentation for the dataset.
-analysis/                         		TSTool software command files to process data into useful forms.
-  Process-xlsx-to-csv.TSTool			TSTool command file that processes the core dataset from .xlsx to .csv.
-  README.md                     		Explanation of TSTool command files used to process the core data into other products.
+.gitattributes                  		Git configuration file indicate repository configuration, in particular handling of line-ending and binary files.
+.gitignore                      		Git configuration file to ignore files that should not be committed to the repository.
+README.md                     		Explanation of repository contents, data files and sources and TSTool command files used to process the core data into other products.
 ```
 
 ### Colorado-Municipalities.xlsx Contents ###
@@ -86,13 +84,20 @@ Other worksheets within the workbook contain the following:
 
 * **Metadata_Municipality** worksheet serves as the metadata for data columns in the **Municipality** worksheet.
 
+
 ### Colorado-Municipalities.csv Contents ###
 
 This file is the **Municipality** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
+
 ### Municipality_County_Relate.csv Contents ###
 
 This file is the **Municipality_County_Relate** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
+
+
+### Colorado-Municipalities.geojson Contents ###
+
+This file is the **Municipality** worksheet saved in GeoJSON format.  This file should be viewable as a map in the GitHub repository.  It can also be used in GIS or mapping applications.
 
 ## Attribution ##
 
