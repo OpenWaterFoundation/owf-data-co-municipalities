@@ -14,16 +14,18 @@ analysis/                         		TSTool software command files to process dat
   Process-xlsx-to-csv.TSTool			TSTool command file that processes the core dataset from .xlsx to .csv.
   Process-xlsx-to-geojson.TSTool		TSTool command file that processes the core dataset from .xlsx to .geojson.  
 data-orig/					Folder containing original data files downloaded from agency websites.
+  Colorado-DOLA-LocalGovt-IDs-Municipality.csv	The data file that is a copy of the Department of Local Affairs' Local Government Information System website that contains local government IDs (DOLA_LG_ID).
   Colorado-FIPS-Places.csv			The data file containing original data download from the U.S. Census Bureau containing FIPS IDs.
   Colorado-GNIS-Civil.csv			The data file containing original data download from the Geographic Names Information System containing GNIS IDs.
-  Colorado-DOLA-LocalGovt-IDs-Municipality.csv	The data file that is a copy of the Department of Local Affairs' Local Government Information System website that contains local government IDs (DOLA_LG_ID).
-  Colorado-PWS-IDs.csv				The data file containing original data download from the EPA's Safe Drinking Water Information System containing PWS IDs.
   Colorado-Municipality-PointLocation.csv	Saved attribute table of Municipal Boundaries in Colorado geojson file downloaded from the Colorado Information Marketplace that contains coordinates of the centroid of each municipality's boundaries.
+  Colorado-PWS-IDs.csv				The data file containing original data download from the EPA's Safe Drinking Water Information System containing PWS IDs.
 data/                           		Folder containing data files.
   Colorado-Municipalities.xlsx     	        Simple Excel file containing core data.
   Colorado-Municipalities.csv      	        The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.
   Colorado-Municipalities.geojson	        The Excel file contents from the Municipality worksheet converted to a geojson file, useful for mapping applications.
+  Municipality-Basin-Relate.csv			The Excel file contents from the Municipality_Basin_Relate worksheet converted to a csv file, useful for automated processing.
   Municipality-County-Relate.csv		The Excel file contents from the Municipality_County_Relate worksheet converted to a csv file, useful for automated processing.
+  Municipality-Document-Relate.csv		The Excel file contents from the Municipality_Document_Relate worksheet converted to a csv file, useful for automated processing.
 doc/
   ?                             		Additional documentation for the dataset.
 .gitattributes                  		Git configuration file indicate repository configuration, in particular handling of line-ending and binary files.
@@ -50,11 +52,13 @@ The core Excel workbook that serves as the master data contains the following da
 * **DWR_WaterDistrict_ID_Flag -- TO BE ADDED**
 * **County_CSV** -- county in which the municipality is contained.  Several municipalities are in more than one county.  In these cases, each county is listed in alphabetical order, separated by commas.  Municipalities in multiple counties can also be found in the **Municipality_County_Relate** worksheet.
 * **NumCounty** -- number of counties within the municipality's boundaries.  This is a quick way to determine if the municipality is in multiple counties.
-* **IBCC_Basin_CSV --  TO BE ADDED**
-* **Num_IBCC_Basin --  TO BE ADDED**
+* **IBCC_Basin_CSV** --  Interbasin Compact Committee (IBCC) basin in which the municipality is contained.  Some municipalities are in more than one basin.  In these cases, each basin is listed in alphabetical order, separated by commas.  Municipalities in multiple basins can also be found in the **Municipality_Basin_Relate** worksheet.
+* **Num_IBCC_Basin** --  number of IBCC basins within the municipality's boundaries.  This is a quick way to determine if the municipality is in multiple basins.
 * **Latitude** -- latitude of municipality's point location in decimal degrees
 * **Longitude** -- longitude of municipality's point location in decimal degrees
 * **Lat_Long_Flag** -- indication of how latitude and longitude were determined
+* **Website** -- website URL of the municipality
+* **Website_Flag** -- data status of Website values; see more detail below
 * **Comment** -- any other information about the municipality
 
 Each type of identifier also contains a data column of the same name with the word "Flag" added to the column name.  These columns are an indication of data status as it relates to missing data.  The following conventions are used:
@@ -76,9 +80,13 @@ Other worksheets within the workbook contain the following:
 
 * **Municipality_County_Relate** worksheet lists the municipalities that are contained in more than one county.  This worksheet is organized so that each county within a municipality is its own record.  Therefore, the same municipality may be listed in more than one row and be associated with a different county.  This will allow for the establishment of one-to-many relationships when linking to and processing other datasets.
 
+* **Municipality_Basin_Relate** worksheet lists the municipalities that are contained in more than one basin.  This worksheet is organized so that each basin within a municipality is its own record.  Therefore, the same municipality may be listed in more than one row and be associated with a different basin.  This will allow for the establishment of one-to-many relationships when linking to and processing other datasets.
+
+* **Municipality_Document_Relate** worksheet lists documents such as water efficiency plans, source water assessment plans, etc. that are associated with a particular municipality.  A URL is provided for each document.  This worksheet is organized so that each document is its own record.  Therefore, the same municipality may be listed in more than one row, but the document will be different.  This will allow for the establishment of one-to-many relationships when linking to and processing other datasets.
+
 * **County** worksheet is simply a list of all of the counties in Colorado.  It is used to fill in county data in other worksheets to ensure data consistency, i.e., no grammatical errors when typing in a county name.
 
-* **Basin** worksheet is simply a list of the Interbasin Compact Committee (IBCC) river basins in Colorado.  It is used to fill in basin data in other worksheets to ensure data consistency, i.e., no grammatical errors when typing in a basin name.
+* **IBCC_Basin** worksheet is simply a list of the Interbasin Compact Committee (IBCC) river basins in Colorado.  It is used to fill in basin data in other worksheets to ensure data consistency, i.e., no grammatical errors when typing in a basin name.
 
 * **ChangeLog** worksheet indicates any changes made to the dataset, the date they occurred and who made the changes.
 
@@ -112,15 +120,20 @@ In these instances, the municipality's water and sanitation district may have a 
 (the difference between water demand and available supply for Colorado) and a prototype database and website to manage water provider and Identified Projects and Processes data.  The BNDSS ID is included in this dataset
 so that it can be potentially linked to datasets that result from the Statewide Water Supply Initiative (SWSI) Update.
 * Latitude and Longitude coordinates were found by accessing a Colorado Information Marketplace map titled [Municipal Boundaries in Colorado](https://data.colorado.gov/Municipal/Municipal-Boundaries-in-Colorado/u943-ics6).  The map was downloaded as a GeoJSON file and opened in QGIS.  The centroid of each municipality's polygon was calculated and used as the point location for the municipality.
+* Website URLs were found by manually searching for municipality websites.  Documents such as water efficiency plans were also manually searched.
 
 ## How to Use the Data ##
 
 The Colorado Municipalities dataset provides a complete statewide list of municipalities assembled from multiple sources.  There are several unique identifiers for each municipality and the dataset allows cross-referencing the identifiers
-so that other datasets can be joined.  For example, the [Colorado Water Providers dataset](owf-data-co-municipal-water-providers) uses the municipalities' identifiers and can be used to link additional data.
+so that other datasets can be joined.  For example, the [Colorado Water Providers dataset](https://www.github/com/OpenWaterFoundation/owf-data-co-municipal-water-providers) uses the municipalities' identifiers and can be used to link additional data.
 
 The Excel or csv files can be used as tabular datasets as is, to create filtered lists or to link to other datasets.  Data-processing software such as TSTool can be used to link this dataset to other datasets.  Datasets can be used within GIS software to create maps.
 
 The format and contents of the dataset will change over time.  It is recommended to save a copy of the dataset.
+
+## Disclaimer ##
+
+OWF has created a complete statewide dataset of municipalities.  OWF will attempt to fill data gaps as the dataset is used for analysis and funding allows for more data review.  OWF provides no guarantee as to the accuracy of the data.  **Use this dataset at your own risk.**  OWF welcomes feedback to improve the dataset.
 
 ## License ##
 
