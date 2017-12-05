@@ -95,17 +95,28 @@ Other worksheets within the workbook contain the following:
 
 ### Colorado-Municipalities.csv Contents ###
 
-This file is the **Municipality** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
-
-
-### Municipality_County_Relate.csv Contents ###
-
-This file is the **Municipality_County_Relate** worksheet saved in csv format.  To use this file, **do not** first open in Excel, because IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
+This file is the **Municipality** worksheet saved in csv format.  Warning:  if this file is opened directly in Excel, IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
 
 ### Colorado-Municipalities.geojson Contents ###
 
 This file is the **Municipality** worksheet saved in GeoJSON format.  This file should be viewable as a map in the GitHub repository.  It can also be used in GIS or mapping applications.
+
+
+### Municipality-Basin-Relate.csv Contents ###
+
+This file is the **Municipality_Basin_Relate** worksheet saved in csv format.  Warning:  if this file is opened directly in Excel, IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
+
+
+### Municipality-County-Relate.csv Contents ###
+
+This file is the **Municipality_County_Relate** worksheet saved in csv format.  Warning:  if this file is opened directly in Excel, IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
+
+
+### Municipality-Document-Relate.csv Contents ###
+
+This file is the **Municipality_Document_Relate** worksheet saved in csv format.  Warning:  if this file is opened directly in Excel, IDs that contain leading zeroes will not show those zeroes.  Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
+
 
 ## Attribution ##
 
