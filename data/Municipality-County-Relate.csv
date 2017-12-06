@@ -1,43 +1,43 @@
-"DOLA_LG_ID","MunicipalityName","County"
-64009,Arvada,Adams
-64009,Arvada,Jefferson
-64017,Basalt,Eagle
-64017,Basalt,Pitkin
-64258,Bennett,Adams
-64258,Bennett,Arapahoe
-64237,Berthoud,Larimer
-64237,Berthoud,Weld
-07006,Bow Mar,Arapahoe
-07006,Bow Mar,Jefferson
-64029,Brighton,Adams
-64029,Brighton,Weld
-64039,Center,Rio Grande
-64039,Center,Saguache
-64039,Central City,Clear Creek
-64039,Central City,Gilpin
-64060,Erie,Boulder
-64060,Erie,Weld
-62022,Green Mountain Falls,El Paso
-62022,Green Mountain Falls,Teller
-64266,Johnstown,Larimer
-64266,Johnstown,Weld
-62038,Lochbuie,Adams
-62038,Lochbuie,Weld
-64205,Longmont,Boulder
-64205,Longmont,Weld
-64198,Northglenn,Adams
-64198,Northglenn,Weld
-64183,Superior,Boulder
-64183,Superior,Jefferson
-64264,Thornton,Adams
-64264,Thornton,Weld
-64153,Westminster,Adams
-64153,Westminster,Jefferson
-64225,Windsor,Larimer
-64225,Windsor,Weld
-64010,Aurora,Adams
-64010,Aurora,Arapahoe
-64010,Aurora,Douglas
-64085,Littleton,Arapahoe
-64085,Littleton,Douglas
-64085,Littleton,Jefferson
+"OWF_ID","MunicipalityName","County"
+Arvada,Arvada,Adams
+Arvada,Arvada,Jefferson
+Basalt,Basalt,Eagle
+Basalt,Basalt,Pitkin
+Bennett,Bennett,Adams
+Bennett,Bennett,Arapahoe
+Berthoud,Berthoud,Larimer
+Berthoud,Berthoud,Weld
+BowMar,Bow Mar,Arapahoe
+BowMar,Bow Mar,Jefferson
+Brighton,Brighton,Adams
+Brighton,Brighton,Weld
+Center,Center,Rio Grande
+Center,Center,Saguache
+CentralCity,Central City,Clear Creek
+CentralCity,Central City,Gilpin
+Erie,Erie,Boulder
+Erie,Erie,Weld
+GreenMtnFalls,Green Mountain Falls,El Paso
+GreenMtnFalls,Green Mountain Falls,Teller
+Johnstown,Johnstown,Larimer
+Johnstown,Johnstown,Weld
+Lochbuie,Lochbuie,Adams
+Lochbuie,Lochbuie,Weld
+Longmont,Longmont,Boulder
+Longmont,Longmont,Weld
+Northglenn,Northglenn,Adams
+Northglenn,Northglenn,Weld
+Superior,Superior,Boulder
+Superior,Superior,Jefferson
+Thornton,Thornton,Adams
+Thornton,Thornton,Weld
+Westminster,Westminster,Adams
+Westminster,Westminster,Jefferson
+Windsor,Windsor,Larimer
+Windsor,Windsor,Weld
+Aurora,Aurora,Adams
+Aurora,Aurora,Arapahoe
+Aurora,Aurora,Douglas
+Littleton,Littleton,Arapahoe
+Littleton,Littleton,Douglas
+Littleton,Littleton,Jefferson

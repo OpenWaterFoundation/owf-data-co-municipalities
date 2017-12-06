@@ -1,21 +1,21 @@
-"DOLA_LG_ID","MunicipalityName","Basin"
-64009,Arvada,Metro
-64009,Arvada,South Platte
-64010,Aurora,Metro
-64010,Aurora,South Platte
-64029,Brighton,Metro
-64029,Brighton,South Platte
-64030,Broomfield,Metro
-64030,Broomfield,South Platte
-03029,Commerce City,Metro
-03029,Commerce City,South Platte
-15015,Denver,Metro
-15015,Denver,South Platte
-25008,Grand Junction,Colorado
-25008,Grand Junction,Gunnison
-62038,Lochbuie,Metro
-62038,Lochbuie,South Platte
-64198,Northglenn,Metro
-64198,Northglenn,South Platte
-25025,Woodland Park,Arkansas
-25025,Woodland Park,Metro
+"OWF_ID","MunicipalityName","Basin"
+Arvada,Arvada,Metro
+Arvada,Arvada,South Platte
+Aurora,Aurora,Metro
+Aurora,Aurora,South Platte
+Brighton,Brighton,Metro
+Brighton,Brighton,South Platte
+Broomfield,Broomfield,Metro
+Broomfield,Broomfield,South Platte
+CommerceCity,Commerce City,Metro
+CommerceCity,Commerce City,South Platte
+Denver,Denver,Metro
+Denver,Denver,South Platte
+GrandJunction,Grand Junction,Colorado
+GrandJunction,Grand Junction,Gunnison
+Lochbuie,Lochbuie,Metro
+Lochbuie,Lochbuie,South Platte
+Northglenn,Northglenn,Metro
+Northglenn,Northglenn,South Platte
+WoodlandPark,Woodland Park,Arkansas
+WoodlandPark,Woodland Park,Metro

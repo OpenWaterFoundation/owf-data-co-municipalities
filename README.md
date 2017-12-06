@@ -44,8 +44,8 @@ The core Excel workbook that serves as the master data contains the following da
 * **GNIS_ID_Flag** -- data status of GNIS_ID values; see more detail below
 * **DOLA_LG_ID** -- 5-digit identifier used by Colorado's [Department of Local Affairs (DOLA)](https://dola.colorado.gov/lgis/municipalities.jsf), to link DOLA datasets
 * **DOLA_LG_ID_Flag** -- data status of DOLA_LG_ID values; see more detail below
-* **BNDSS_ID** -- Basin Needs Decision Support System identifier, also used in [Water Efficiency Data Portal](http://cowaterefficiency.com/unauthenticated_home), to link Colorado Water Conservation Board datasets
-* **BNDSS_ID_Flag** --  data status of BNDSS_ID values; see more detail below
+* **OWF_ID** -- unique text identifier created by OWF to ensure that one type of ID contains values for every municipality
+* **OWF_ID_Flag** --  data status of OWF_ID values; see more detail below
 * **PWS_ID** -- [Public Water System](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) identifier, to link Environmental Protection Agency and [Colorado Department of Public Health and Environment](https://www.colorado.gov/pacific/cdphe/data) datasets
 * **PWS_ID_Flag** -- data status of PWS_ID values; see more detail below
 * **DWR_WaterDistrict_ID -- TO BE ADDED**
@@ -61,15 +61,29 @@ The core Excel workbook that serves as the master data contains the following da
 * **Website_Flag** -- data status of Website values; see more detail below
 * **Comment** -- any other information about the municipality
 
-Each type of identifier also contains a data column of the same name with the word "Flag" added to the column name.  These columns are an indication of data status as it relates to missing data.  The following conventions are used:
-* G = ID is a known/good value.  
-* g = ID is an estimated (but good) value.  The associated ID cell is also highlighted in yellow.
-* N = ID is not applicable for the municipality and a blank cell is expected.
-* M = ID is known to be missing in original source and therefore a blank cell indicates that a value cannot be provided.
-* m = ID is estimated to be missing.  The associated ID cell is also highlighted in gray.
-* z = ID is unable to be confirmed.  A value is possible but cannot be confirmed one way or the other.  The associated ID cell is also highlighted in orange.
+#### Naming Conventions for OWF_ID ####
+The following naming conventions are used to create OWF_IDs.
+* Crk = Creek
+* Hls = Hills
+* Hts = Heights
+* Mt = Mount
+* Mtn = Mountain
+* Spgs = Springs
+* Vlg = Village
+* Vly = Valley
+* Ft = Fort
+
+#### Data Flags ####
+For many data columns, a second column of the same name with the word "Flag" added to the column name is present.  These columns are an indication of data status as it relates to missing data.  The following conventions are used:
+* G = Value is a known/good value.  
+* g = Value is an estimated (but good) value.  The associated cell is also highlighted in yellow.
+* N = Value is not applicable for the municipality and a blank cell is expected.
+* M = Value is known to be missing in original source and therefore a blank cell indicates that a value cannot be provided.
+* m = Value is estimated to be missing.  The associated cell is also highlighted in gray.
+* z = Value is unable to be confirmed.  A value is possible but cannot be confirmed one way or the other.  The associated cell is also highlighted in orange.
 * x = OWF has not made an attempt to populate the cell at this time.  The value is missing because OWF has not attempted to find the value.  The associated cell is also highlighted in black.
-* C = BNDSS_ID has been newly created based on BNDSS_ID naming conventions (applies to BNDSS IDs only)
+
+*Note that colors are visible only in xlsx files and not csv files.*
 
 Column names are taken from original sources if possible.  For clarity and attribution, agency abbreviations may be added to the original column name.  Column name length is not restricted, therefore, some data representations such as Esri shapefiles may contain truncated column names.  In such cases, alternative formats such as GeoJSON are recommended.
 
@@ -127,16 +141,15 @@ The data sources for this dataset are listed below.
 * The Colorado Department of Local Affairs (DOLA)'s [Local Government Information System](https://dola.colorado.gov/lgis/municipalities.jsf) uses a local government ID (LG ID).  Data were copied directly from the website and pasted into Excel.  OWF manually cross-referenced the LG ID to the MunicipalityName.  OWF is using DOLA_LG_ID instead of LG ID to add more description to the identifier.
 * The Environmental Protection Agency (EPA)'s [Safe Drinking Water Information System (SDWIS)](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) contains information about Public Water System IDs (PWS ID).  PWS IDs are used for water quality reports.  The Colorado Department of Public Health and Environment (CDPHE)'s Water Quality Control Division also uses the PWS ID.  Not all municipalities have a PWS ID.  
 In these instances, the municipality's water and sanitation district may have a PWS ID, or the municipality may be served by a water company that has a PWS ID.  OWF manually cross-referenced the PWS Name to the MunicipalityName.
-* The BNDSS ID is from the Basin Needs Decision Support System, which was initially developed as a project for the Colorado Water Conservation Board (CWCB) from 2009-2011.  The BNDSS resulted in a prototype gap analysis 
-(the difference between water demand and available supply for Colorado) and a prototype database and website to manage water provider and Identified Projects and Processes data.  The BNDSS ID is included in this dataset
-so that it can be potentially linked to datasets that result from the Statewide Water Supply Initiative (SWSI) Update.
+* OWF ID was created for each municipality by the Open Water Foundation in order to ensure that at least one type of identifier contains values for every municipality.  For example, almost every municipality has a DOLA LG ID, with the exception of Carbonate.
+However, if Carbonate needed to be linked to other datasets via the DOLA LG ID, this would not be possible.  Therefore, the OWF ID is needed to potentially link every municipality to other datasets.  OWF ID is used in the "Relate" worksheets and csv files as the identifier for this reason.
 * Latitude and Longitude coordinates were found by accessing a Colorado Information Marketplace map titled [Municipal Boundaries in Colorado](https://data.colorado.gov/Municipal/Municipal-Boundaries-in-Colorado/u943-ics6).  The map was downloaded as a GeoJSON file and opened in QGIS.  The centroid of each municipality's polygon was calculated and used as the point location for the municipality.
 * Website URLs were found by manually searching for municipality websites.  Documents such as water efficiency plans were also manually searched.
 
 ## How to Use the Data ##
 
 The Colorado Municipalities dataset provides a complete statewide list of municipalities assembled from multiple sources.  There are several unique identifiers for each municipality and the dataset allows cross-referencing the identifiers
-so that other datasets can be joined.  For example, the [Colorado Water Providers dataset](https://www.github/com/OpenWaterFoundation/owf-data-co-municipal-water-providers) uses the municipalities' identifiers and can be used to link additional data.
+so that other datasets can be joined.  For example, the [Colorado Water Providers dataset](https://www.github.com/OpenWaterFoundation/owf-data-co-municipal-water-providers) uses the municipalities' identifiers and can be used to link additional data.
 
 The Excel or csv files can be used as tabular datasets as is, to create filtered lists or to link to other datasets.  Data-processing software such as TSTool can be used to link this dataset to other datasets.  Datasets can be used within GIS software to create maps.
 
