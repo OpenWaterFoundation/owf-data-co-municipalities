@@ -4,9 +4,7 @@ The data-orig folder contains original data files downloaded from various agency
 
 ## Colorado-DOLA-LocalGovt-IDs-Municipality.csv ##
 
-This file is a copy of the Department of Local Affairs (DOLA)'s [Local Government Information System](https://dola.colorado.gov/lgis/municipalities.jsf) website that contains local government IDs (DOLA_LG_ID).  These data are not available in a machine-readable, downloadable format.  Therefore, the data were copied directly from the website and pasted into Excel.  It was necessary to convert LG IDs to text to preserve leading zeroes.  IDs with leading zeroes needed to have those zeroes added back in to make sure that the LG ID is a 5-digit number.  
-The file was then saved in CSV format.
-**OWF is working on a process to automatically download DOLA_LG_IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.  So far, efforts through the State Demography Office and the Colorado Information Marketplace have not been successful.  OWF believes there may be an error in the files.**  
+This file is a copy of the Department of Local Affairs (DOLA)'s [Local Government Information System](https://dola.colorado.gov/lgis/municipalities.jsf) website that contains local government IDs (DOLA_LG_ID).  These data are not available in a machine-readable, downloadable format.  Therefore, the data were copied directly from the website and pasted into Excel.  It was necessary to convert LG IDs to text to preserve leading zeroes.  IDs with leading zeroes needed to have those zeroes added back in to make sure that the LG ID is a 5-digit number. The file was then saved in CSV format.  **OWF is working on a process to automatically download DOLA_LG_IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.  So far, efforts through the State Demography Office and the Colorado Information Marketplace have not been successful.  OWF believes there may be an error in the files.**  
 
 The file contains the following data columns.
 
@@ -20,9 +18,7 @@ The file contains the following data columns.
 
 ## Colorado-FIPS-Places.csv ##
 
-This file contains original data downloaded from the [U.S.Census Bureau](https://www.census.gov/geo/reference/codes/place.html) containing Federal Information Processing Standard (FIPS) IDs.
-Data are available as pipe-delimited files.  The file was then saved in CSV format.
-**OWF is working on a process to automatically download FIPS IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.  One problem with the data is that the pipe-delimited file does not contain column headings, which makes it difficult to use within TSTool.**
+This file contains original data downloaded from the [U.S.Census Bureau](https://www.census.gov/geo/reference/codes/place.html) containing Federal Information Processing Standard (FIPS) IDs. Data are available as pipe-delimited files.  The file was then saved in CSV format.  **OWF is working on a process to automatically download FIPS IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.  One problem with the data is that the pipe-delimited file does not contain column headings, which makes it difficult to use within TSTool.**
 
 The file contains the following data columns.  Note that the data column names are not currently listed in the file.  Column names can be found [here](https://www.census.gov/geo/reference/codes/place.html).
 
@@ -37,9 +33,7 @@ The file contains the following data columns.  Note that the data column names a
 
 ## Colorado-GNIS-Civil.csv ##
 
-This file contains original data downloaded from the [Geographic Names Information System (GNIS)](https://geonames.usgs.gov/apex/f?p=138:2:0::NO:RP::) containing GNIS IDs.
-Data are available as pipe-delimited files.  The file was then saved in CSV format.
-**OWF is working on a process to automatically download GNIS IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.**
+This file contains original data downloaded from the [Geographic Names Information System (GNIS)](https://geonames.usgs.gov/apex/f?p=138:2:0::NO:RP::) containing GNIS IDs. Data are available as pipe-delimited files.  The file was then saved in CSV format.  **OWF is working on a process to automatically download GNIS IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.**
 
 The file contains the following data columns.
 
@@ -58,8 +52,7 @@ The file contains the following data columns.
 
 ## Colorado-Municipality-PointLocation.csv ##
 
-This file is the saved attribute table of the [Municipal Boundaries in Colorado](https://data.colorado.gov/Municipal/Municipal-Boundaries-in-Colorado/u943-ics6) geojson file downloaded from the Colorado Information Marketplace.  The geojson file was opened in QGIS and the centroid of each municipality's boundaries was calculated (the process is not described here).  
-The attribute table of the geojson file was saved in CSV format.
+This file is the saved attribute table of the [Municipal Boundaries in Colorado](https://data.colorado.gov/Municipal/Municipal-Boundaries-in-Colorado/u943-ics6) geojson file downloaded from the Colorado Information Marketplace.  The geojson file was opened in QGIS and the centroid of each municipality's boundaries was calculated (the process is not described here).  The attribute table of the geojson file was saved in CSV format.
 
 The file contains the following data columns.
 
@@ -72,9 +65,7 @@ The file contains the following data columns.
 
 ## Colorado-PWS-IDs.csv ##
 
-This file contains original data downloaded from the EPA's [Safe Drinking Water Information System](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) containing Public Water System (PWS) IDs.
-The Advanced Search Options was chosen after selecting Colorado as the Primacy Agency.  Then the Water System Summary report option was selected.  Data were available for download in CSV format.
-**OWF is working on a process to automatically download PWS IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.**
+This file contains original data downloaded from the EPA's [Safe Drinking Water Information System](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) containing Public Water System (PWS) IDs.  The Advanced Search Options was chosen after selecting Colorado as the Primacy Agency.  Then the Water System Summary report option was selected.  Data were available for download in CSV format.  **OWF is working on a process to automatically download PWS IDs within TSTool.  This will allow for easier processing of data and to check if any updates have been made to the dataset.**
 
 The file contains the following data columns.
 
