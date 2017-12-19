@@ -96,7 +96,7 @@ Other worksheets within the workbook contain the following:
 
 * **Municipality_Basin_Relate** worksheet lists the municipalities that are contained in more than one basin.  This worksheet is organized so that each basin within a municipality is its own record.  Therefore, the same municipality may be listed in more than one row and be associated with a different basin.  This will allow for the establishment of one-to-many relationships when linking to and processing other datasets.
 
-* **Municipality_Document_Relate** worksheet lists documents such as water efficiency plans, source water assessment plans, etc. that are associated with a particular municipality.  A URL is provided for each document.  This worksheet is organized so that each document is its own record.  Therefore, the same municipality may be listed in more than one row, but the document will be different.  This will allow for the establishment of one-to-many relationships when linking to and processing other datasets.
+* **Municipality_Document_Relate** worksheet lists documents such as water efficiency plans, source water assessment plans, etc. that are associated with a particular municipality.  A URL is provided for each document.  The documents were found by manually searching for documents using the terms "water conservation efficiency plans" and the municipality's name.  This worksheet is organized so that each document is its own record.  Therefore, the same municipality may be listed in more than one row, but the document will be different.  This will allow for the establishment of one-to-many relationships when linking to and processing other datasets.  This worksheet is incomplete but highlights the potential for providing links to any documents associated with a municipality.
 
 * **County** worksheet is simply a list of all of the counties in Colorado.  It is used to fill in county data in other worksheets to ensure data consistency, i.e., no grammatical errors when typing in a county name.
 
@@ -150,6 +150,7 @@ However, if Carbonate needed to be linked to other datasets via the DOLA_LG_ID, 
 
 The Colorado Municipalities dataset provides a complete statewide list of municipalities assembled from multiple sources.  There are several unique identifiers for each municipality and the dataset allows cross-referencing the identifiers
 so that other datasets can be joined.  For example, the [Colorado Water Providers dataset](https://www.github.com/OpenWaterFoundation/owf-data-co-municipal-water-providers) uses the municipalities' identifiers and can be used to link additional data.
+In addition, organizations like the [Colorado Municipal League](https://www.cml.org/) may find the dataset useful and connections could be made to their data if any of these identifiers are used with their data.
 
 The Excel and csv files can be used as tabular datasets as is, to create filtered lists or to link to other datasets.  Data-processing software such as TSTool can be used to link this dataset to other datasets.  Datasets can be used within GIS software to create maps.
 
