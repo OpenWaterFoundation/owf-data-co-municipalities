@@ -5,6 +5,18 @@ This is a foundational dataset that provides unique identifiers and other data f
 The identifiers can be used to link other datasets, such as water providers that serve municipalities.
 OWF has created and is maintaining this dataset to facilitate work on various data analysis and visualization projects in Colorado. 
 
+The following sections provide a summary of the project repository:
+
+* [Repository Contents](#repository-contents)
+* [Attribution](#attribution)
+* [How to Use the Data](#how-to-use-the-data)
+* [Disclaimer](#disclaimer)
+* [License](#license)
+* [Contributing](#contributing)
+* [Maintainers](#maintainers)
+* [Contributors](#contributors)
+
+
 ## Repository Contents ##
 
 The repository contains the following:
@@ -19,6 +31,10 @@ data-orig/                                      Folder containing original data 
   Colorado-GNIS-Civil.csv                       The data file containing original data download from the Geographic Names Information System containing GNIS IDs.
   Colorado-Municipality-PointLocation.csv       Saved attribute table of Municipal Boundaries in Colorado geojson file downloaded from the Colorado Information Marketplace that contains coordinates of the centroid of each municipality's boundaries.
   Colorado-PWS-IDs.csv                          The data file containing original data download from the EPA's Safe Drinking Water Information System containing PWS IDs.
+  README.md                                     Explanation of folder contents, description of data files, and the methodology used to obtain the data and mapping to the joined dataset
+data-orig-process/                               Folder containing files, such as TSTool command files, for processing original data into usable formats
+  FIPS-Headings.csv                             Data file of column names needed to process FIPS data.
+  Process-original-data-to-csv.TSTool           TSTool command file that processes data either directly from websites or data files manually downloaded from websites to be incorporated into the main dataset
 data/                                           Folder containing data files.
   Colorado-Municipalities.xlsx                  Simple Excel file containing core data.
   Colorado-Municipalities.csv                   The Excel file contents from the Municipality worksheet converted to a csv file, useful for automated processing.

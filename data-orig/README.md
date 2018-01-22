@@ -19,7 +19,7 @@ Once the "City/Town Name:" column was cross-referenced to the **MunicipalityName
 
 ## Colorado-FIPS-Places.csv ##
 
-This file contains original data downloaded from the [U.S.Census Bureau](https://www.census.gov/geo/reference/codes/place.html) containing Federal Information Processing Standard (FIPS) IDs for "Places".  FIPS IDs are useful for linking federal datasets.  "Colorado" was selected under the "Select a File" option and the data are available as a [pipe-delimited file](https://www2.census.gov/geo/docs/reference/codes/files/st08_co_places.txt).  The pipe-delimited file was opened directly in TSTool using the WebGet() command.  The data were [processed](NEED TSTOOL COMMAND FILE HERE) to create column headings for the data and then saved in CSV format.
+This file contains original data downloaded from the [U.S.Census Bureau](https://www.census.gov/geo/reference/codes/place.html) containing Federal Information Processing Standard (FIPS) IDs for "Places".  FIPS IDs are useful for linking federal datasets.  "Colorado" was selected under the "Select a File" option and the data are available as a [pipe-delimited file](https://www2.census.gov/geo/docs/reference/codes/files/st08_co_places.txt).  The pipe-delimited file was opened directly in TSTool using the WebGet() command.  The data were [processed](https://github.com/OpenWaterFoundation/owf-data-co-municipalities/blob/master/data-orig-process/Process-original-data-to-csv.TSTool) to create column headings for the data and then saved in CSV format.
 
 The file contains the following data columns.
 
