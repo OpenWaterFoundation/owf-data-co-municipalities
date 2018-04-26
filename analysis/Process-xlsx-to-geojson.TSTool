@@ -8,3 +8,12 @@ SetDebugLevel(LogFileLevel=1)
 ReadTableFromExcel(TableID="Municipalities",InputFile="..\data\Colorado-Municipalities.xlsx",Worksheet="Municipality",ExcelColumnNames=FirstRowInRange,ColumnExcludeFilters="MunicipalityName:",ExcelIntegerColumns="GNIS_ID,Num_IBCC_Basin,NumCounty",ExcelTextColumns="FIPS_ID,DOLA_LG_ID")
 SetDebugLevel(ScreenLevel=0,LogFileLevel=0)
 WriteTableToGeoJSON(TableID="Municipalities",OutputFile="..\data\Colorado-Municipalities.geojson",LongitudeColumn="Longitude",LatitudeColumn="Latitude")
+#
+# Filter dataset to only include municipalities in the South Platte and Metro basins
+CopyTable(TableID="Municipalities",NewTableID="Municipalities-SP-Metro",ColumnFilters="IBCC_Basin_CSV:*South Platte*")
+CopyTable(TableID="Municipalities",NewTableID="Municipalities-Metro",ColumnFilters="IBCC_Basin_CSV:*Metro*")
+AppendTable(TableID="Municipalities-SP-Metro",AppendTableID="Municipalities-Metro")
+# Save dataset to GeoJSON for use in map of municipalities in the South Platte and Metro basins
+WriteTableToGeoJSON(TableID="Municipalities-SP-Metro",OutputFile="..\visualizations\Colorado-Municipalities-SouthPlatteMetro.geojson",LongitudeColumn="Longitude",LatitudeColumn="Latitude",JavaScriptVar="Municipality")
+#
+#
