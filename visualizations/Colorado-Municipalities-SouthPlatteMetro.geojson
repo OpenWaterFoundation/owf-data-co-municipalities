@@ -1,10 +1,10 @@
 var Municipality = {
   "type": "FeatureCollection",
-  "bbox": [-106.067034409302, 38.8192015621234, -102.228400669877, 40.9845143066135],
+  "bbox": [-106.067034, 38.819202, -102.228401, 40.984514],
   "features": [
       {
       "type": "Feature",
-      "bbox": [-103.220268904227, 40.1633737351297, -103.220268904227, 40.1633737351297],
+      "bbox": [-103.220269, 40.163374, -103.220269, 40.163374],
       "properties": {
         "MunicipalityName": "Akron",
         "FIPS_ID": "00925",
@@ -26,18 +26,18 @@ var Municipality = {
         "Latitude": 40.1633737351297,
         "Longitude": -103.220268904227,
         "Lat_Long_Flag": "",
-        "Website": "www.townofakron.com",
+        "Website": "https://townofakron.colorado.gov/",
         "Website_Flag": "G",
         "Comment": ""
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.220268904227, 40.1633737351297]
+        "coordinates": [-103.220269, 40.163374]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-106.067034409302, 39.2859447431895, -106.067034409302, 39.2859447431895],
+      "bbox": [-106.067034, 39.285945, -106.067034, 39.285945],
       "properties": {
         "MunicipalityName": "Alma",
         "FIPS_ID": "01530",
@@ -65,12 +65,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-106.067034409302, 39.2859447431895]
+        "coordinates": [-106.067034, 39.285945]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.274050777657, 39.2843376485096, -103.274050777657, 39.2843376485096],
+      "bbox": [-103.274051, 39.284338, -103.274051, 39.284338],
       "properties": {
         "MunicipalityName": "Arriba",
         "FIPS_ID": "03235",
@@ -98,12 +98,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.274050777657, 39.2843376485096]
+        "coordinates": [-103.274051, 39.284338]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.151036572194, 39.8320672175647, -105.151036572194, 39.8320672175647],
+      "bbox": [-105.151037, 39.832067, -105.151037, 39.832067],
       "properties": {
         "MunicipalityName": "Arvada",
         "FIPS_ID": "03455",
@@ -131,12 +131,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.151036572194, 39.8320672175647]
+        "coordinates": [-105.151037, 39.832067]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.740422790172, 40.5893430467476, -104.740422790172, 40.5893430467476],
+      "bbox": [-104.740423, 40.589343, -104.740423, 40.589343],
       "properties": {
         "MunicipalityName": "Ault",
         "FIPS_ID": "03950",
@@ -164,12 +164,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.740422790172, 40.5893430467476]
+        "coordinates": [-104.740423, 40.589343]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.727500667131, 39.7083698425771, -104.727500667131, 39.7083698425771],
+      "bbox": [-104.727501, 39.708370, -104.727501, 39.708370],
       "properties": {
         "MunicipalityName": "Aurora",
         "FIPS_ID": "04000",
@@ -197,12 +197,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.727500667131, 39.7083698425771]
+        "coordinates": [-104.727501, 39.708370]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.428527421126, 39.7363578652689, -104.428527421126, 39.7363578652689],
+      "bbox": [-104.428527, 39.736358, -104.428527, 39.736358],
       "properties": {
         "MunicipalityName": "Bennett",
         "FIPS_ID": "06090",
@@ -230,12 +230,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.428527421126, 39.7363578652689]
+        "coordinates": [-104.428527, 39.736358]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.041522675914, 40.3070165051853, -105.041522675914, 40.3070165051853],
+      "bbox": [-105.041523, 40.307017, -105.041523, 40.307017],
       "properties": {
         "MunicipalityName": "Berthoud",
         "FIPS_ID": "06255",
@@ -263,12 +263,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.041522675914, 40.3070165051853]
+        "coordinates": [-105.041523, 40.307017]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.423414402647, 39.3038223445282, -102.423414402647, 39.3038223445282],
+      "bbox": [-102.423414, 39.303822, -102.423414, 39.303822],
       "properties": {
         "MunicipalityName": "Bethune",
         "FIPS_ID": "06530",
@@ -290,18 +290,18 @@ var Municipality = {
         "Latitude": 39.3038223445282,
         "Longitude": -102.423414402647,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Bethune,_Colorado",
+        "Website_Flag": "g",
         "Comment": ""
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.423414402647, 39.3038223445282]
+        "coordinates": [-102.423414, 39.303822]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.494544159674, 39.8042945399056, -105.494544159674, 39.8042945399056],
+      "bbox": [-105.494544, 39.804295, -105.494544, 39.804295],
       "properties": {
         "MunicipalityName": "Black Hawk",
         "FIPS_ID": "07025",
@@ -329,12 +329,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.494544159674, 39.8042945399056]
+        "coordinates": [-105.494544, 39.804295]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.251550614425, 40.0272932622885, -105.251550614425, 40.0272932622885],
+      "bbox": [-105.251551, 40.027293, -105.251551, 40.027293],
       "properties": {
         "MunicipalityName": "Boulder",
         "FIPS_ID": "07850",
@@ -362,12 +362,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.251550614425, 40.0272932622885]
+        "coordinates": [-105.251551, 40.027293]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.796088718275, 39.9716115627577, -104.796088718275, 39.9716115627577],
+      "bbox": [-104.796089, 39.971612, -104.796089, 39.971612],
       "properties": {
         "MunicipalityName": "Brighton",
         "FIPS_ID": "08675",
@@ -395,12 +395,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.796088718275, 39.9716115627577]
+        "coordinates": [-104.796089, 39.971612]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.052588697338, 39.9541611552188, -105.052588697338, 39.9541611552188],
+      "bbox": [-105.052589, 39.954161, -105.052589, 39.954161],
       "properties": {
         "MunicipalityName": "Broomfield",
         "FIPS_ID": "09280",
@@ -428,12 +428,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.052588697338, 39.9541611552188]
+        "coordinates": [-105.052589, 39.954161]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.632021915852, 40.2581472596622, -103.632021915852, 40.2581472596622],
+      "bbox": [-103.632022, 40.258147, -103.632022, 40.258147],
       "properties": {
         "MunicipalityName": "Brush",
         "FIPS_ID": "09555",
@@ -461,12 +461,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.632021915852, 40.2581472596622]
+        "coordinates": [-103.632022, 40.258147]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.271482967916, 39.3042051856915, -102.271482967916, 39.3042051856915],
+      "bbox": [-102.271483, 39.304205, -102.271483, 39.304205],
       "properties": {
         "MunicipalityName": "Burlington",
         "FIPS_ID": "10600",
@@ -494,12 +494,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.271482967916, 39.3042051856915]
+        "coordinates": [-102.271483, 39.304205]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.516892212181, 39.7974616300362, -105.516892212181, 39.7974616300362],
+      "bbox": [-105.516892, 39.797462, -105.516892, 39.797462],
       "properties": {
         "MunicipalityName": "Central City",
         "FIPS_ID": "12910",
@@ -527,12 +527,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.516892212181, 39.7974616300362]
+        "coordinates": [-105.516892, 39.797462]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.352029982615, 38.8192015621234, -102.352029982615, 38.8192015621234],
+      "bbox": [-102.352030, 38.819202, -102.352030, 38.819202],
       "properties": {
         "MunicipalityName": "Cheyenne Wells",
         "FIPS_ID": "14175",
@@ -560,12 +560,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.352029982615, 38.8192015621234]
+        "coordinates": [-102.352030, 38.819202]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.843440604707, 39.8639750542627, -104.843440604707, 39.8639750542627],
+      "bbox": [-104.843441, 39.863975, -104.843441, 39.863975],
       "properties": {
         "MunicipalityName": "Commerce City",
         "FIPS_ID": "16495",
@@ -593,12 +593,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.843440604707, 39.8639750542627]
+        "coordinates": [-104.843441, 39.863975]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.801366424266, 40.8591646354174, -102.801366424266, 40.8591646354174],
+      "bbox": [-102.801366, 40.859165, -102.801366, 40.859165],
       "properties": {
         "MunicipalityName": "Crook",
         "FIPS_ID": "18640",
@@ -620,18 +620,18 @@ var Municipality = {
         "Latitude": 40.8591646354174,
         "Longitude": -102.801366424266,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Crook,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.801366424266, 40.8591646354174]
+        "coordinates": [-102.801366, 40.859165]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.948282188112, 40.0620169634066, -104.948282188112, 40.0620169634066],
+      "bbox": [-104.948282, 40.062017, -104.948282, 40.062017],
       "properties": {
         "MunicipalityName": "Dacono",
         "FIPS_ID": "19080",
@@ -659,12 +659,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.948282188112, 40.0620169634066]
+        "coordinates": [-104.948282, 40.062017]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.043303175126, 39.6153629135261, -104.043303175126, 39.6153629135261],
+      "bbox": [-104.043303, 39.615363, -104.043303, 39.615363],
       "properties": {
         "MunicipalityName": "Deer Trail",
         "FIPS_ID": "19630",
@@ -692,12 +692,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.043303175126, 39.6153629135261]
+        "coordinates": [-104.043303, 39.615363]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.875765513436, 39.7619758867353, -104.875765513436, 39.7619758867353],
+      "bbox": [-104.875766, 39.761976, -104.875766, 39.761976],
       "properties": {
         "MunicipalityName": "Denver",
         "FIPS_ID": "20000",
@@ -725,12 +725,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.875765513436, 39.7619758867353]
+        "coordinates": [-104.875766, 39.761976]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.712559374214, 40.5272234790025, -104.712559374214, 40.5272234790025],
+      "bbox": [-104.712559, 40.527223, -104.712559, 40.527223],
       "properties": {
         "MunicipalityName": "Eaton",
         "FIPS_ID": "22860",
@@ -758,12 +758,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.712559374214, 40.5272234790025]
+        "coordinates": [-104.712559, 40.527223]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.488307291246, 40.1122518913659, -102.488307291246, 40.1122518913659],
+      "bbox": [-102.488307, 40.112252, -102.488307, 40.112252],
       "properties": {
         "MunicipalityName": "Eckley",
         "FIPS_ID": "23025",
@@ -791,12 +791,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.488307291246, 40.1122518913659]
+        "coordinates": [-102.488307, 40.112252]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.606171927, 39.3610149912436, -104.606171927, 39.3610149912436],
+      "bbox": [-104.606172, 39.361015, -104.606172, 39.361015],
       "properties": {
         "MunicipalityName": "Elizabeth",
         "FIPS_ID": "23740",
@@ -824,12 +824,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.606171927, 39.3610149912436]
+        "coordinates": [-104.606172, 39.361015]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.682783002938, 39.759448675836, -105.682783002938, 39.759448675836],
+      "bbox": [-105.682783, 39.759449, -105.682783, 39.759449],
       "properties": {
         "MunicipalityName": "Empire",
         "FIPS_ID": "24620",
@@ -851,18 +851,18 @@ var Municipality = {
         "Latitude": 39.759448675836,
         "Longitude": -105.682783002938,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Empire,_Colorado",
+        "Website_Flag": "g",
         "Comment": ""
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.682783002938, 39.759448675836]
+        "coordinates": [-105.682783, 39.759449]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.040251784718, 40.0401566421271, -105.040251784718, 40.0401566421271],
+      "bbox": [-105.040252, 40.040157, -105.040252, 40.040157],
       "properties": {
         "MunicipalityName": "Erie",
         "FIPS_ID": "24950",
@@ -890,12 +890,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.040251784718, 40.0401566421271]
+        "coordinates": [-105.040252, 40.040157]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.521622794895, 40.369869913307, -105.521622794895, 40.369869913307],
+      "bbox": [-105.521623, 40.369870, -105.521623, 40.369870],
       "properties": {
         "MunicipalityName": "Estes Park",
         "FIPS_ID": "25115",
@@ -923,12 +923,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.521622794895, 40.369869913307]
+        "coordinates": [-105.521623, 40.369870]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.738910893393, 40.3660342570787, -104.738910893393, 40.3660342570787],
+      "bbox": [-104.738911, 40.366034, -104.738911, 40.366034],
       "properties": {
         "MunicipalityName": "Evans",
         "FIPS_ID": "25280",
@@ -956,12 +956,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.738910893393, 40.3660342570787]
+        "coordinates": [-104.738911, 40.366034]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.996948212044, 39.2244956793897, -105.996948212044, 39.2244956793897],
+      "bbox": [-105.996948, 39.224496, -105.996948, 39.224496],
       "properties": {
         "MunicipalityName": "Fairplay",
         "FIPS_ID": "25610",
@@ -989,12 +989,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.996948212044, 39.2244956793897]
+        "coordinates": [-105.996948, 39.224496]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.949470048402, 40.1563833588468, -104.949470048402, 40.1563833588468],
+      "bbox": [-104.949470, 40.156383, -104.949470, 40.156383],
       "properties": {
         "MunicipalityName": "Firestone",
         "FIPS_ID": "26600",
@@ -1022,12 +1022,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.949470048402, 40.1563833588468]
+        "coordinates": [-104.949470, 40.156383]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.0750619482, 39.2943989673676, -103.0750619482, 39.2943989673676],
+      "bbox": [-103.075062, 39.294399, -103.075062, 39.294399],
       "properties": {
         "MunicipalityName": "Flagler",
         "FIPS_ID": "26765",
@@ -1055,12 +1055,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.0750619482, 39.2943989673676]
+        "coordinates": [-103.075062, 39.294399]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.839505654281, 40.6811912788473, -102.839505654281, 40.6811912788473],
+      "bbox": [-102.839506, 40.681191, -102.839506, 40.681191],
       "properties": {
         "MunicipalityName": "Fleming",
         "FIPS_ID": "26875",
@@ -1082,18 +1082,18 @@ var Municipality = {
         "Latitude": 40.6811912788473,
         "Longitude": -102.839505654281,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Fleming,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.839505654281, 40.6811912788473]
+        "coordinates": [-102.839506, 40.681191]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.065724907137, 40.5477604407296, -105.065724907137, 40.5477604407296],
+      "bbox": [-105.065725, 40.547760, -105.065725, 40.547760],
       "properties": {
         "MunicipalityName": "Fort Collins",
         "FIPS_ID": "27425",
@@ -1121,12 +1121,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.065724907137, 40.5477604407296]
+        "coordinates": [-105.065725, 40.547760]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.802365036787, 40.0841645342073, -104.802365036787, 40.0841645342073],
+      "bbox": [-104.802365, 40.084165, -104.802365, 40.084165],
       "properties": {
         "MunicipalityName": "Fort Lupton",
         "FIPS_ID": "27700",
@@ -1154,12 +1154,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.802365036787, 40.0841645342073]
+        "coordinates": [-104.802365, 40.084165]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.79037104449, 40.2557952886369, -103.79037104449, 40.2557952886369],
+      "bbox": [-103.790371, 40.255795, -103.790371, 40.255795],
       "properties": {
         "MunicipalityName": "Fort Morgan",
         "FIPS_ID": "27810",
@@ -1187,12 +1187,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.79037104449, 40.2557952886369]
+        "coordinates": [-103.790371, 40.255795]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.966880861318, 40.1095306081544, -104.966880861318, 40.1095306081544],
+      "bbox": [-104.966881, 40.109531, -104.966881, 40.109531],
       "properties": {
         "MunicipalityName": "Frederick",
         "FIPS_ID": "28360",
@@ -1220,12 +1220,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.966880861318, 40.1095306081544]
+        "coordinates": [-104.966881, 40.109531]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.689525128385, 40.3945856125721, -104.689525128385, 40.3945856125721],
+      "bbox": [-104.689525, 40.394586, -104.689525, 40.394586],
       "properties": {
         "MunicipalityName": "Garden City",
         "FIPS_ID": "29185",
@@ -1253,12 +1253,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.689525128385, 40.3945856125721]
+        "coordinates": [-104.689525, 40.394586]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.499309647814, 39.2782641182615, -103.499309647814, 39.2782641182615],
+      "bbox": [-103.499310, 39.278264, -103.499310, 39.278264],
       "properties": {
         "MunicipalityName": "Genoa",
         "FIPS_ID": "29680",
@@ -1286,12 +1286,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.499309647814, 39.2782641182615]
+        "coordinates": [-103.499310, 39.278264]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.694228591381, 39.7179711557446, -105.694228591381, 39.7179711557446],
+      "bbox": [-105.694229, 39.717971, -105.694229, 39.717971],
       "properties": {
         "MunicipalityName": "Georgetown",
         "FIPS_ID": "29735",
@@ -1319,12 +1319,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.694228591381, 39.7179711557446]
+        "coordinates": [-105.694229, 39.717971]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.782023740617, 40.2841712430891, -104.782023740617, 40.2841712430891],
+      "bbox": [-104.782024, 40.284171, -104.782024, 40.284171],
       "properties": {
         "MunicipalityName": "Gilcrest",
         "FIPS_ID": "29955",
@@ -1352,12 +1352,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.782023740617, 40.2841712430891]
+        "coordinates": [-104.782024, 40.284171]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.770666494179, 40.4149167984481, -104.770666494179, 40.4149167984481],
+      "bbox": [-104.770666, 40.414917, -104.770666, 40.414917],
       "properties": {
         "MunicipalityName": "Greeley",
         "FIPS_ID": "32155",
@@ -1385,12 +1385,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.770666494179, 40.4149167984481]
+        "coordinates": [-104.770666, 40.414917]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.225941163574, 40.8691040994846, -104.225941163574, 40.8691040994846],
+      "bbox": [-104.225941, 40.869104, -104.225941, 40.869104],
       "properties": {
         "MunicipalityName": "Grover",
         "FIPS_ID": "33310",
@@ -1412,18 +1412,18 @@ var Municipality = {
         "Latitude": 40.8691040994846,
         "Longitude": -104.225941163574,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Grover,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.225941163574, 40.8691040994846]
+        "coordinates": [-104.225941, 40.869104]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.62971461318, 40.6418760811231, -102.62971461318, 40.6418760811231],
+      "bbox": [-102.629715, 40.641876, -102.629715, 40.641876],
       "properties": {
         "MunicipalityName": "Haxtun",
         "FIPS_ID": "34960",
@@ -1445,18 +1445,18 @@ var Municipality = {
         "Latitude": 40.6418760811231,
         "Longitude": -102.62971461318,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Haxtun,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.62971461318, 40.6418760811231]
+        "coordinates": [-102.629715, 40.641876]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.522174585733, 40.3246538883821, -103.522174585733, 40.3246538883821],
+      "bbox": [-103.522175, 40.324654, -103.522175, 40.324654],
       "properties": {
         "MunicipalityName": "Hillrose",
         "FIPS_ID": "36610",
@@ -1484,12 +1484,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.522174585733, 40.3246538883821]
+        "coordinates": [-103.522175, 40.324654]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.299812404388, 40.5834138411827, -102.299812404388, 40.5834138411827],
+      "bbox": [-102.299812, 40.583414, -102.299812, 40.583414],
       "properties": {
         "MunicipalityName": "Holyoke",
         "FIPS_ID": "37270",
@@ -1517,12 +1517,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.299812404388, 40.5834138411827]
+        "coordinates": [-102.299812, 40.583414]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.621449188528, 40.0898276498528, -104.621449188528, 40.0898276498528],
+      "bbox": [-104.621449, 40.089828, -104.621449, 40.089828],
       "properties": {
         "MunicipalityName": "Hudson",
         "FIPS_ID": "37820",
@@ -1550,12 +1550,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.621449188528, 40.0898276498528]
+        "coordinates": [-104.621449, 40.089828]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.500109264519, 39.7444447129785, -105.500109264519, 39.7444447129785],
+      "bbox": [-105.500109, 39.744445, -105.500109, 39.744445],
       "properties": {
         "MunicipalityName": "Idaho Springs",
         "FIPS_ID": "38370",
@@ -1583,12 +1583,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.500109264519, 39.7444447129785]
+        "coordinates": [-105.500109, 39.744445]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.066181740331, 40.7590829965325, -103.066181740331, 40.7590829965325],
+      "bbox": [-103.066182, 40.759083, -103.066182, 40.759083],
       "properties": {
         "MunicipalityName": "Iliff",
         "FIPS_ID": "38590",
@@ -1610,18 +1610,18 @@ var Municipality = {
         "Latitude": 40.7590829965325,
         "Longitude": -103.066181740331,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Iliff,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.066181740331, 40.7590829965325]
+        "coordinates": [-103.066182, 40.759083]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.391629508488, 40.1183439361497, -105.391629508488, 40.1183439361497],
+      "bbox": [-105.391630, 40.118344, -105.391630, 40.118344],
       "properties": {
         "MunicipalityName": "Jamestown",
         "FIPS_ID": "39195",
@@ -1649,12 +1649,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.391629508488, 40.1183439361497]
+        "coordinates": [-105.391630, 40.118344]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.948157145551, 40.3498934259828, -104.948157145551, 40.3498934259828],
+      "bbox": [-104.948157, 40.349893, -104.948157, 40.349893],
       "properties": {
         "MunicipalityName": "Johnstown",
         "FIPS_ID": "39855",
@@ -1682,12 +1682,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.948157145551, 40.3498934259828]
+        "coordinates": [-104.948157, 40.349893]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.262759738969, 40.9845143066135, -102.262759738969, 40.9845143066135],
+      "bbox": [-102.262760, 40.984514, -102.262760, 40.984514],
       "properties": {
         "MunicipalityName": "Julesburg",
         "FIPS_ID": "39965",
@@ -1715,12 +1715,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.262759738969, 40.9845143066135]
+        "coordinates": [-102.262760, 40.984514]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.503504857958, 40.1115800742645, -104.503504857958, 40.1115800742645],
+      "bbox": [-104.503505, 40.111580, -104.503505, 40.111580],
       "properties": {
         "MunicipalityName": "Keenesburg",
         "FIPS_ID": "40185",
@@ -1748,12 +1748,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.503504857958, 40.1115800742645]
+        "coordinates": [-104.503505, 40.111580]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.564446831482, 40.3877825402511, -104.564446831482, 40.3877825402511],
+      "bbox": [-104.564447, 40.387783, -104.564447, 40.387783],
       "properties": {
         "MunicipalityName": "Kersey",
         "FIPS_ID": "40515",
@@ -1781,12 +1781,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.564446831482, 40.3877825402511]
+        "coordinates": [-104.564447, 40.387783]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.455417078921, 39.3430410926825, -104.455417078921, 39.3430410926825],
+      "bbox": [-104.455417, 39.343041, -104.455417, 39.343041],
       "properties": {
         "MunicipalityName": "Kiowa",
         "FIPS_ID": "40790",
@@ -1814,12 +1814,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.455417078921, 39.3430410926825]
+        "coordinates": [-104.455417, 39.343041]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.706165080413, 40.348480306219, -104.706165080413, 40.348480306219],
+      "bbox": [-104.706165, 40.348480, -104.706165, 40.348480],
       "properties": {
         "MunicipalityName": "La Salle",
         "FIPS_ID": "43605",
@@ -1847,12 +1847,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.706165080413, 40.348480306219]
+        "coordinates": [-104.706165, 40.348480]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.099661822004, 39.9946744960353, -105.099661822004, 39.9946744960353],
+      "bbox": [-105.099662, 39.994674, -105.099662, 39.994674],
       "properties": {
         "MunicipalityName": "Lafayette",
         "FIPS_ID": "41835",
@@ -1880,12 +1880,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.099661822004, 39.9946744960353]
+        "coordinates": [-105.099662, 39.994674]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.727104610915, 40.0117006591956, -104.727104610915, 40.0117006591956],
+      "bbox": [-104.727105, 40.011701, -104.727105, 40.011701],
       "properties": {
         "MunicipalityName": "Lochbuie",
         "FIPS_ID": "45530",
@@ -1913,12 +1913,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.727104610915, 40.0117006591956]
+        "coordinates": [-104.727105, 40.011701]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.829708193069, 40.2704377099226, -103.829708193069, 40.2704377099226],
+      "bbox": [-103.829708, 40.270438, -103.829708, 40.270438],
       "properties": {
         "MunicipalityName": "Log Lane Village",
         "FIPS_ID": "45695",
@@ -1940,18 +1940,18 @@ var Municipality = {
         "Latitude": 40.2704377099226,
         "Longitude": -103.829708193069,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Log_Lane_Village,_Colorado",
+        "Website_Flag": "g",
         "Comment": ""
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.829708193069, 40.2704377099226]
+        "coordinates": [-103.829708, 40.270438]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.09949920852, 40.1690657006036, -105.09949920852, 40.1690657006036],
+      "bbox": [-105.099499, 40.169066, -105.099499, 40.169066],
       "properties": {
         "MunicipalityName": "Longmont",
         "FIPS_ID": "45970",
@@ -1979,12 +1979,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.09949920852, 40.1690657006036]
+        "coordinates": [-105.099499, 40.169066]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.144019580404, 39.9709492909529, -105.144019580404, 39.9709492909529],
+      "bbox": [-105.144020, 39.970949, -105.144020, 39.970949],
       "properties": {
         "MunicipalityName": "Louisville",
         "FIPS_ID": "46355",
@@ -2012,12 +2012,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.144019580404, 39.9709492909529]
+        "coordinates": [-105.144020, 39.970949]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.06206450252, 40.4167242093744, -105.06206450252, 40.4167242093744],
+      "bbox": [-105.062065, 40.416724, -105.062065, 40.416724],
       "properties": {
         "MunicipalityName": "Loveland",
         "FIPS_ID": "46465",
@@ -2045,12 +2045,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.06206450252, 40.4167242093744]
+        "coordinates": [-105.062065, 40.416724]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.268858115806, 40.2228574781132, -105.268858115806, 40.2228574781132],
+      "bbox": [-105.268858, 40.222857, -105.268858, 40.222857],
       "properties": {
         "MunicipalityName": "Lyons",
         "FIPS_ID": "47070",
@@ -2078,12 +2078,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.268858115806, 40.2228574781132]
+        "coordinates": [-105.268858, 40.222857]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.992771395866, 40.2321635740677, -104.992771395866, 40.2321635740677],
+      "bbox": [-104.992771, 40.232164, -104.992771, 40.232164],
       "properties": {
         "MunicipalityName": "Mead",
         "FIPS_ID": "49600",
@@ -2111,12 +2111,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.992771395866, 40.2321635740677]
+        "coordinates": [-104.992771, 40.232164]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.353644034774, 40.4836958582768, -103.353644034774, 40.4836958582768],
+      "bbox": [-103.353644, 40.483696, -103.353644, 40.483696],
       "properties": {
         "MunicipalityName": "Merino",
         "FIPS_ID": "50040",
@@ -2144,12 +2144,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.353644034774, 40.4836958582768]
+        "coordinates": [-103.353644, 40.483696]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.855719863875, 40.3103016828747, -104.855719863875, 40.3103016828747],
+      "bbox": [-104.855720, 40.310302, -104.855720, 40.310302],
       "properties": {
         "MunicipalityName": "Milliken",
         "FIPS_ID": "50480",
@@ -2177,12 +2177,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.855719863875, 40.3103016828747]
+        "coordinates": [-104.855720, 40.310302]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.507173399819, 39.9632797896812, -105.507173399819, 39.9632797896812],
+      "bbox": [-105.507173, 39.963280, -105.507173, 39.963280],
       "properties": {
         "MunicipalityName": "Nederland",
         "FIPS_ID": "53175",
@@ -2210,12 +2210,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.507173399819, 39.9632797896812]
+        "coordinates": [-105.507173, 39.963280]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.978275050753, 39.9106503821706, -104.978275050753, 39.9106503821706],
+      "bbox": [-104.978275, 39.910650, -104.978275, 39.910650],
       "properties": {
         "MunicipalityName": "Northglenn",
         "FIPS_ID": "54330",
@@ -2243,12 +2243,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.978275050753, 39.9106503821706]
+        "coordinates": [-104.978275, 39.910650]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.788312676114, 40.713256349548, -104.788312676114, 40.713256349548],
+      "bbox": [-104.788313, 40.713256, -104.788313, 40.713256],
       "properties": {
         "MunicipalityName": "Nunn",
         "FIPS_ID": "55045",
@@ -2276,12 +2276,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.788312676114, 40.713256349548]
+        "coordinates": [-104.788313, 40.713256]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.962138575305, 40.1501287571028, -102.962138575305, 40.1501287571028],
+      "bbox": [-102.962139, 40.150129, -102.962139, 40.150129],
       "properties": {
         "MunicipalityName": "Otis",
         "FIPS_ID": "56365",
@@ -2309,12 +2309,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.962138575305, 40.1501287571028]
+        "coordinates": [-102.962139, 40.150129]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.38834328614, 40.9608175299478, -102.38834328614, 40.9608175299478],
+      "bbox": [-102.388343, 40.960818, -102.388343, 40.960818],
       "properties": {
         "MunicipalityName": "Ovid",
         "FIPS_ID": "56475",
@@ -2342,12 +2342,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.38834328614, 40.9608175299478]
+        "coordinates": [-102.388343, 40.960818]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.471768927012, 40.6127582138221, -102.471768927012, 40.6127582138221],
+      "bbox": [-102.471769, 40.612758, -102.471769, 40.612758],
       "properties": {
         "MunicipalityName": "Paoli",
         "FIPS_ID": "57245",
@@ -2369,18 +2369,18 @@ var Municipality = {
         "Latitude": 40.6127582138221,
         "Longitude": -102.471768927012,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Paoli,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.471768927012, 40.6127582138221]
+        "coordinates": [-102.471769, 40.612758]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.113943303042, 40.9618783549541, -103.113943303042, 40.9618783549541],
+      "bbox": [-103.113943, 40.961878, -103.113943, 40.961878],
       "properties": {
         "MunicipalityName": "Peetz",
         "FIPS_ID": "58235",
@@ -2408,12 +2408,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.113943303042, 40.9618783549541]
+        "coordinates": [-103.113943, 40.961878]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.755180469934, 40.6334991879895, -104.755180469934, 40.6334991879895],
+      "bbox": [-104.755180, 40.633499, -104.755180, 40.633499],
       "properties": {
         "MunicipalityName": "Pierce",
         "FIPS_ID": "59005",
@@ -2441,12 +2441,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.755180469934, 40.6334991879895]
+        "coordinates": [-104.755180, 40.633499]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.833607041203, 40.2219921891597, -104.833607041203, 40.2219921891597],
+      "bbox": [-104.833607, 40.221992, -104.833607, 40.221992],
       "properties": {
         "MunicipalityName": "Platteville",
         "FIPS_ID": "60160",
@@ -2474,12 +2474,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.833607041203, 40.2219921891597]
+        "coordinates": [-104.833607, 40.221992]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.843596929544, 40.607949202116, -103.843596929544, 40.607949202116],
+      "bbox": [-103.843597, 40.607949, -103.843597, 40.607949],
       "properties": {
         "MunicipalityName": "Raymer",
         "FIPS_ID": "63045",
@@ -2501,18 +2501,18 @@ var Municipality = {
         "Latitude": 40.607949202116,
         "Longitude": -103.843596929544,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Raymer,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.843596929544, 40.607949202116]
+        "coordinates": [-103.843597, 40.607949]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.526071205778, 40.9357547961962, -102.526071205778, 40.9357547961962],
+      "bbox": [-102.526071, 40.935755, -102.526071, 40.935755],
       "properties": {
         "MunicipalityName": "Sedgwick",
         "FIPS_ID": "68930",
@@ -2540,12 +2540,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.526071205778, 40.9357547961962]
+        "coordinates": [-102.526071, 40.935755]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.869524037379, 39.2979669578076, -102.869524037379, 39.2979669578076],
+      "bbox": [-102.869524, 39.297967, -102.869524, 39.297967],
       "properties": {
         "MunicipalityName": "Seibert",
         "FIPS_ID": "69040",
@@ -2567,18 +2567,18 @@ var Municipality = {
         "Latitude": 39.2979669578076,
         "Longitude": -102.869524037379,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Seibert,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.869524037379, 39.2979669578076]
+        "coordinates": [-102.869524, 39.297967]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.865735382647, 40.5272846534232, -104.865735382647, 40.5272846534232],
+      "bbox": [-104.865735, 40.527285, -104.865735, 40.527285],
       "properties": {
         "MunicipalityName": "Severance",
         "FIPS_ID": "69150",
@@ -2606,12 +2606,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.865735382647, 40.5272846534232]
+        "coordinates": [-104.865735, 40.527285]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.726456017026, 39.6956978408622, -105.726456017026, 39.6956978408622],
+      "bbox": [-105.726456, 39.695698, -105.726456, 39.695698],
       "properties": {
         "MunicipalityName": "Silver Plume",
         "FIPS_ID": "70360",
@@ -2639,12 +2639,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.726456017026, 39.6956978408622]
+        "coordinates": [-105.726456, 39.695698]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-103.199016818507, 40.6244262798965, -103.199016818507, 40.6244262798965],
+      "bbox": [-103.199017, 40.624426, -103.199017, 40.624426],
       "properties": {
         "MunicipalityName": "Sterling",
         "FIPS_ID": "73935",
@@ -2672,12 +2672,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-103.199016818507, 40.6244262798965]
+        "coordinates": [-103.199017, 40.624426]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.603473153264, 39.3028829179855, -102.603473153264, 39.3028829179855],
+      "bbox": [-102.603473, 39.302883, -102.603473, 39.302883],
       "properties": {
         "MunicipalityName": "Stratton",
         "FIPS_ID": "74485",
@@ -2705,12 +2705,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.603473153264, 39.3028829179855]
+        "coordinates": [-102.603473, 39.302883]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.159291219305, 39.9335895922768, -105.159291219305, 39.9335895922768],
+      "bbox": [-105.159291, 39.933590, -105.159291, 39.933590],
       "properties": {
         "MunicipalityName": "Superior",
         "FIPS_ID": "75640",
@@ -2738,12 +2738,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.159291219305, 39.9335895922768]
+        "coordinates": [-105.159291, 39.933590]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.960485206998, 40.5333744881638, -104.960485206998, 40.5333744881638],
+      "bbox": [-104.960485, 40.533374, -104.960485, 40.533374],
       "properties": {
         "MunicipalityName": "Timnath",
         "FIPS_ID": "77510",
@@ -2771,12 +2771,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.960485206998, 40.5333744881638]
+        "coordinates": [-104.960485, 40.533374]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.74335160034, 39.3021194921861, -102.74335160034, 39.3021194921861],
+      "bbox": [-102.743352, 39.302119, -102.743352, 39.302119],
       "properties": {
         "MunicipalityName": "Vona",
         "FIPS_ID": "81690",
@@ -2798,18 +2798,18 @@ var Municipality = {
         "Latitude": 39.3021194921861,
         "Longitude": -102.74335160034,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://www.waldencolorado.com/",
+        "Website_Flag": "G",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.74335160034, 39.3021194921861]
+        "coordinates": [-102.743352, 39.302119]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.513882594351, 40.0721662448411, -105.513882594351, 40.0721662448411],
+      "bbox": [-105.513883, 40.072166, -105.513883, 40.072166],
       "properties": {
         "MunicipalityName": "Ward",
         "FIPS_ID": "82735",
@@ -2837,12 +2837,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.513882594351, 40.0721662448411]
+        "coordinates": [-105.513883, 40.072166]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.005937397535, 40.6986979388636, -105.005937397535, 40.6986979388636],
+      "bbox": [-105.005937, 40.698698, -105.005937, 40.698698],
       "properties": {
         "MunicipalityName": "Wellington",
         "FIPS_ID": "83230",
@@ -2870,12 +2870,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.005937397535, 40.6986979388636]
+        "coordinates": [-105.005937, 40.698698]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.07213495181, 40.228748673267, -104.07213495181, 40.228748673267],
+      "bbox": [-104.072135, 40.228749, -104.072135, 40.228749],
       "properties": {
         "MunicipalityName": "Wiggins",
         "FIPS_ID": "84770",
@@ -2903,12 +2903,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.07213495181, 40.228748673267]
+        "coordinates": [-104.072135, 40.228749]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.921327723937, 40.467906040532, -104.921327723937, 40.467906040532],
+      "bbox": [-104.921328, 40.467906, -104.921328, 40.467906],
       "properties": {
         "MunicipalityName": "Windsor",
         "FIPS_ID": "85485",
@@ -2936,12 +2936,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.921327723937, 40.467906040532]
+        "coordinates": [-104.921328, 40.467906]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.228400669877, 40.0801979541032, -102.228400669877, 40.0801979541032],
+      "bbox": [-102.228401, 40.080198, -102.228401, 40.080198],
       "properties": {
         "MunicipalityName": "Wray",
         "FIPS_ID": "86310",
@@ -2969,12 +2969,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.228400669877, 40.0801979541032]
+        "coordinates": [-102.228401, 40.080198]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-102.716135666695, 40.1234736298818, -102.716135666695, 40.1234736298818],
+      "bbox": [-102.716136, 40.123474, -102.716136, 40.123474],
       "properties": {
         "MunicipalityName": "Yuma",
         "FIPS_ID": "86750",
@@ -3002,12 +3002,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-102.716135666695, 40.1234736298818]
+        "coordinates": [-102.716136, 40.123474]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.151036572194, 39.8320672175647, -105.151036572194, 39.8320672175647],
+      "bbox": [-105.151037, 39.832067, -105.151037, 39.832067],
       "properties": {
         "MunicipalityName": "Arvada",
         "FIPS_ID": "03455",
@@ -3035,12 +3035,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.151036572194, 39.8320672175647]
+        "coordinates": [-105.151037, 39.832067]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.727500667131, 39.7083698425771, -104.727500667131, 39.7083698425771],
+      "bbox": [-104.727501, 39.708370, -104.727501, 39.708370],
       "properties": {
         "MunicipalityName": "Aurora",
         "FIPS_ID": "04000",
@@ -3068,12 +3068,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.727500667131, 39.7083698425771]
+        "coordinates": [-104.727501, 39.708370]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.051221722359, 39.6252647264242, -105.051221722359, 39.6252647264242],
+      "bbox": [-105.051222, 39.625265, -105.051222, 39.625265],
       "properties": {
         "MunicipalityName": "Bow Mar",
         "FIPS_ID": "08070",
@@ -3101,12 +3101,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.051221722359, 39.6252647264242]
+        "coordinates": [-105.051222, 39.625265]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.796088718275, 39.9716115627577, -104.796088718275, 39.9716115627577],
+      "bbox": [-104.796089, 39.971612, -104.796089, 39.971612],
       "properties": {
         "MunicipalityName": "Brighton",
         "FIPS_ID": "08675",
@@ -3134,12 +3134,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.796088718275, 39.9716115627577]
+        "coordinates": [-104.796089, 39.971612]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.052588697338, 39.9541611552188, -105.052588697338, 39.9541611552188],
+      "bbox": [-105.052589, 39.954161, -105.052589, 39.954161],
       "properties": {
         "MunicipalityName": "Broomfield",
         "FIPS_ID": "09280",
@@ -3167,12 +3167,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.052588697338, 39.9541611552188]
+        "coordinates": [-105.052589, 39.954161]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.870600282233, 39.4624913713405, -104.870600282233, 39.4624913713405],
+      "bbox": [-104.870600, 39.462491, -104.870600, 39.462491],
       "properties": {
         "MunicipalityName": "Castle Pines",
         "FIPS_ID": "12387",
@@ -3200,12 +3200,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.870600282233, 39.4624913713405]
+        "coordinates": [-104.870600, 39.462491]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.853344172543, 39.3761520145162, -104.853344172543, 39.3761520145162],
+      "bbox": [-104.853344, 39.376152, -104.853344, 39.376152],
       "properties": {
         "MunicipalityName": "Castle Rock",
         "FIPS_ID": "12415",
@@ -3233,12 +3233,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.853344172543, 39.3761520145162]
+        "coordinates": [-104.853344, 39.376152]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.867279745782, 39.5926079758186, -104.867279745782, 39.5926079758186],
+      "bbox": [-104.867280, 39.592608, -104.867280, 39.592608],
       "properties": {
         "MunicipalityName": "Centennial",
         "FIPS_ID": "12815",
@@ -3266,12 +3266,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.867279745782, 39.5926079758186]
+        "coordinates": [-104.867280, 39.592608]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.948027748618, 39.6375468672902, -104.948027748618, 39.6375468672902],
+      "bbox": [-104.948028, 39.637547, -104.948028, 39.637547],
       "properties": {
         "MunicipalityName": "Cherry Hills Village",
         "FIPS_ID": "13845",
@@ -3299,12 +3299,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.948027748618, 39.6375468672902]
+        "coordinates": [-104.948028, 39.637547]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.035295138194, 39.5992941439506, -105.035295138194, 39.5992941439506],
+      "bbox": [-105.035295, 39.599294, -105.035295, 39.599294],
       "properties": {
         "MunicipalityName": "Columbine Valley",
         "FIPS_ID": "16385",
@@ -3332,12 +3332,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.035295138194, 39.5992941439506]
+        "coordinates": [-105.035295, 39.599294]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.843440604707, 39.8639750542627, -104.843440604707, 39.8639750542627],
+      "bbox": [-104.843441, 39.863975, -104.843441, 39.863975],
       "properties": {
         "MunicipalityName": "Commerce City",
         "FIPS_ID": "16495",
@@ -3365,12 +3365,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.843440604707, 39.8639750542627]
+        "coordinates": [-104.843441, 39.863975]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.875765513436, 39.7619758867353, -104.875765513436, 39.7619758867353],
+      "bbox": [-104.875766, 39.761976, -104.875766, 39.761976],
       "properties": {
         "MunicipalityName": "Denver",
         "FIPS_ID": "20000",
@@ -3398,12 +3398,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.875765513436, 39.7619758867353]
+        "coordinates": [-104.875766, 39.761976]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.062632918191, 39.7508532489807, -105.062632918191, 39.7508532489807],
+      "bbox": [-105.062633, 39.750853, -105.062633, 39.750853],
       "properties": {
         "MunicipalityName": "Edgewater",
         "FIPS_ID": "23135",
@@ -3431,12 +3431,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.062632918191, 39.7508532489807]
+        "coordinates": [-105.062633, 39.750853]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.994293471552, 39.6467906348271, -104.994293471552, 39.6467906348271],
+      "bbox": [-104.994293, 39.646791, -104.994293, 39.646791],
       "properties": {
         "MunicipalityName": "Englewood",
         "FIPS_ID": "24785",
@@ -3464,12 +3464,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.994293471552, 39.6467906348271]
+        "coordinates": [-104.994293, 39.646791]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.015469081898, 39.8650263049888, -105.015469081898, 39.8650263049888],
+      "bbox": [-105.015469, 39.865026, -105.015469, 39.865026],
       "properties": {
         "MunicipalityName": "Federal Heights",
         "FIPS_ID": "26270",
@@ -3497,12 +3497,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.015469081898, 39.8650263049888]
+        "coordinates": [-105.015469, 39.865026]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.785482840133, 39.5881747527935, -104.785482840133, 39.5881747527935],
+      "bbox": [-104.785483, 39.588175, -104.785483, 39.588175],
       "properties": {
         "MunicipalityName": "Foxfield",
         "FIPS_ID": "28105",
@@ -3530,12 +3530,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.785482840133, 39.5881747527935]
+        "coordinates": [-104.785483, 39.588175]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.935205300196, 39.7035973660128, -104.935205300196, 39.7035973660128],
+      "bbox": [-104.935205, 39.703597, -104.935205, 39.703597],
       "properties": {
         "MunicipalityName": "Glendale",
         "FIPS_ID": "30340",
@@ -3563,12 +3563,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.935205300196, 39.7035973660128]
+        "coordinates": [-104.935205, 39.703597]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.211680618524, 39.74061655487, -105.211680618524, 39.74061655487],
+      "bbox": [-105.211681, 39.740617, -105.211681, 39.740617],
       "properties": {
         "MunicipalityName": "Golden",
         "FIPS_ID": "30835",
@@ -3596,12 +3596,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.211680618524, 39.74061655487]
+        "coordinates": [-105.211681, 39.740617]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.913032881482, 39.615135570012, -104.913032881482, 39.615135570012],
+      "bbox": [-104.913033, 39.615136, -104.913033, 39.615136],
       "properties": {
         "MunicipalityName": "Greenwood Village",
         "FIPS_ID": "33035",
@@ -3629,12 +3629,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.913032881482, 39.615135570012]
+        "coordinates": [-104.913033, 39.615136]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.05794615855, 39.7802089988362, -105.05794615855, 39.7802089988362],
+      "bbox": [-105.057946, 39.780209, -105.057946, 39.780209],
       "properties": {
         "MunicipalityName": "Lakeside",
         "FIPS_ID": "42495",
@@ -3656,18 +3656,18 @@ var Municipality = {
         "Latitude": 39.7802089988362,
         "Longitude": -105.05794615855,
         "Lat_Long_Flag": "",
-        "Website": "",
-        "Website_Flag": "N",
+        "Website": "https://en.wikipedia.org/wiki/Lakeside,_Colorado",
+        "Website_Flag": "g",
         "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.05794615855, 39.7802089988362]
+        "coordinates": [-105.057946, 39.780209]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.116771820893, 39.6978010846182, -105.116771820893, 39.6978010846182],
+      "bbox": [-105.116772, 39.697801, -105.116772, 39.697801],
       "properties": {
         "MunicipalityName": "Lakewood",
         "FIPS_ID": "43000",
@@ -3695,12 +3695,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.116771820893, 39.6978010846182]
+        "coordinates": [-105.116772, 39.697801]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.892411875788, 39.2316151283815, -104.892411875788, 39.2316151283815],
+      "bbox": [-104.892412, 39.231615, -104.892412, 39.231615],
       "properties": {
         "MunicipalityName": "Larkspur",
         "FIPS_ID": "43550",
@@ -3728,12 +3728,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.892411875788, 39.2316151283815]
+        "coordinates": [-104.892412, 39.231615]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.018772483261, 39.5915247151969, -105.018772483261, 39.5915247151969],
+      "bbox": [-105.018772, 39.591525, -105.018772, 39.591525],
       "properties": {
         "MunicipalityName": "Littleton",
         "FIPS_ID": "45255",
@@ -3761,12 +3761,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.018772483261, 39.5915247151969]
+        "coordinates": [-105.018772, 39.591525]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.727104610915, 40.0117006591956, -104.727104610915, 40.0117006591956],
+      "bbox": [-104.727105, 40.011701, -104.727105, 40.011701],
       "properties": {
         "MunicipalityName": "Lochbuie",
         "FIPS_ID": "45530",
@@ -3794,12 +3794,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.727104610915, 40.0117006591956]
+        "coordinates": [-104.727105, 40.011701]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.870980398423, 39.5308057087149, -104.870980398423, 39.5308057087149],
+      "bbox": [-104.870980, 39.530806, -104.870980, 39.530806],
       "properties": {
         "MunicipalityName": "Lone Tree",
         "FIPS_ID": "45955",
@@ -3827,12 +3827,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.870980398423, 39.5308057087149]
+        "coordinates": [-104.870980, 39.530806]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.193672080751, 39.6429216289034, -105.193672080751, 39.6429216289034],
+      "bbox": [-105.193672, 39.642922, -105.193672, 39.642922],
       "properties": {
         "MunicipalityName": "Morrison",
         "FIPS_ID": "52075",
@@ -3860,12 +3860,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.193672080751, 39.6429216289034]
+        "coordinates": [-105.193672, 39.642922]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.056773243126, 39.7747686282958, -105.056773243126, 39.7747686282958],
+      "bbox": [-105.056773, 39.774769, -105.056773, 39.774769],
       "properties": {
         "MunicipalityName": "Mountain View",
         "FIPS_ID": "52350",
@@ -3893,12 +3893,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.056773243126, 39.7747686282958]
+        "coordinates": [-105.056773, 39.774769]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.978275050753, 39.9106503821706, -104.978275050753, 39.9106503821706],
+      "bbox": [-104.978275, 39.910650, -104.978275, 39.910650],
       "properties": {
         "MunicipalityName": "Northglenn",
         "FIPS_ID": "54330",
@@ -3926,12 +3926,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.978275050753, 39.9106503821706]
+        "coordinates": [-104.978275, 39.910650]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.775085356268, 39.5080286743909, -104.775085356268, 39.5080286743909],
+      "bbox": [-104.775085, 39.508029, -104.775085, 39.508029],
       "properties": {
         "MunicipalityName": "Parker",
         "FIPS_ID": "57630",
@@ -3959,12 +3959,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.775085356268, 39.5080286743909]
+        "coordinates": [-104.775085, 39.508029]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.018176062752, 39.6467753224635, -105.018176062752, 39.6467753224635],
+      "bbox": [-105.018176, 39.646775, -105.018176, 39.646775],
       "properties": {
         "MunicipalityName": "Sheridan",
         "FIPS_ID": "69645",
@@ -3992,12 +3992,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.018176062752, 39.6467753224635]
+        "coordinates": [-105.018176, 39.646775]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-104.944527614153, 39.9205066199859, -104.944527614153, 39.9205066199859],
+      "bbox": [-104.944528, 39.920507, -104.944528, 39.920507],
       "properties": {
         "MunicipalityName": "Thornton",
         "FIPS_ID": "77290",
@@ -4025,12 +4025,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-104.944527614153, 39.9205066199859]
+        "coordinates": [-104.944528, 39.920507]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.062407879934, 39.8836695867616, -105.062407879934, 39.8836695867616],
+      "bbox": [-105.062408, 39.883670, -105.062408, 39.883670],
       "properties": {
         "MunicipalityName": "Westminster",
         "FIPS_ID": "83835",
@@ -4058,12 +4058,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.062407879934, 39.8836695867616]
+        "coordinates": [-105.062408, 39.883670]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.102942704353, 39.7727498960422, -105.102942704353, 39.7727498960422],
+      "bbox": [-105.102943, 39.772750, -105.102943, 39.772750],
       "properties": {
         "MunicipalityName": "Wheat Ridge",
         "FIPS_ID": "84440",
@@ -4091,12 +4091,12 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.102942704353, 39.7727498960422]
+        "coordinates": [-105.102943, 39.772750]
       }
     },
     {
       "type": "Feature",
-      "bbox": [-105.059396630454, 38.9984844096505, -105.059396630454, 38.9984844096505],
+      "bbox": [-105.059397, 38.998484, -105.059397, 38.998484],
       "properties": {
         "MunicipalityName": "Woodland Park",
         "FIPS_ID": "86090",
@@ -4124,7 +4124,7 @@ var Municipality = {
       },
       "geometry": {
         "type": "Point",
-        "coordinates": [-105.059396630454, 38.9984844096505]
+        "coordinates": [-105.059397, 38.998484]
       }
     }
   ]
