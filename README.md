@@ -9,6 +9,7 @@ The following sections provide a summary of the project repository:
 
 * [Repository Contents](#repository-contents)
 * [`Colorado-Municipalities.xlsx` Contents](#colorado-municipalitiesxlsx-contents)
+    + [Worksheet Columns](#worksheet-columns)
     + [Identifier Conventions for OWF_ID](#identifier-conventions-for-owf_id)
     + [Data Flags](#data-flags)
     + [Worksheet Conventions](#worksheet-conventions)
@@ -16,6 +17,7 @@ The following sections provide a summary of the project repository:
 * [Data Files](#data-files)
 * [How to Use the Data](#how-to-use-the-data)
 * [Attribution](#attribution)
+* [Dataset Workflow](#dataset-workflow)
 * [Disclaimer](#disclaimer)
 * [License](#license)
 * [Maintainers and Contributing](#maintainers-and-contributing)
@@ -76,10 +78,14 @@ data/                                           Folder containing data files.
   Municipality-Document-Relate.csv              The Excel file contents from the Municipality_Document_Relate worksheet
                                                 converted to a csv file, useful for automated processing.
 doc/                                            Additional documentation for the dataset.
+visualizations/                                 Files created for specific visualizations, being evaluated.
+                                                These files may be moved to other repositories that contain visualizations.
 z-local-notes/                                  Used for local notes, files are not committed to the repository.
 ```
 
-## `Colorado-Municipalities.xlsx` Contents ###
+## `Colorado-Municipalities.xlsx` Contents ##
+
+### Worksheet Columns ###
 
 The core Excel workbook that serves as the master data contains the following data columns
 within the ***Municipality*** worksheet.
@@ -241,9 +247,9 @@ The data sources for this dataset are listed below.
 | Latitude and Longitude coordinates from Colorado Information Marketplace. | The map titled [Municipal Boundaries in Colorado](https://data.colorado.gov/Municipal/Municipal-Boundaries-in-Colorado/u943-ics6).  The map was downloaded as a GeoJSON file and opened in QGIS.  The centroid of each municipality's polygon was calculated and used as the point location for the municipality. |
 | Municipality Website URLs | URLs were found by manually searching for municipality websites.  Documents such as water efficiency plans were also manually searched. |
 
-## Dataset Creation Process ##
+## Dataset Workflow ##
 
-The following is a summary of the process to create the dataset.
+The following is a summary of the workflow to create the dataset.
 Details for each file are described in the [data-orig/README.md](data-orig/README.md) file.
 Steps can be followed if recreating or updating the dataset.
 The process can be further automated to streamline the overall workflow;
