@@ -2,7 +2,7 @@
 
 This repository contains the [Open Water Foundation (OWF)](http://openwaterfoundation.org) dataset for Colorado municipalities.
 This is a foundational dataset that provides unique identifiers and other data for municipalities.
-The identifiers can be used to link other datasets, such as water providers that serve municipalities.
+The identifiers can be used to link other datasets, such as population datasets and water providers that serve municipalities.
 OWF has created and is maintaining this dataset to facilitate work on various data analysis and visualization projects in Colorado. 
 
 The following sections provide a summary of the project repository:
@@ -100,7 +100,8 @@ Cross-referencing identifiers were added when creating of the workbook.
 | **GNIS_ID_Flag** | Data status of GNIS_ID values; see more detail below. |
 | **DOLA_LG_ID** | 5-digit identifier used by Colorado's [Department of Local Affairs (DOLA)](https://dola.colorado.gov/lgis/municipalities.jsf), to link DOLA datasets. |
 | **DOLA_LG_ID_Flag** | Data status of DOLA_LG_ID values; see more detail below. |
-| **OWF_ID** | Unique text identifier created by OWF to ensure that one type of ID contains values for every municipality. |
+| **OWF_ID** | Unique text identifier created by OWF to ensure that every municipality has a unique identifier.  The `OWF_ID` is a concatenation of muninicpality words, using abbreviations. |
+| **OWF_ID_Full** | Unique text identifier created by OWF to ensure that every municipality has a unique identifier.  The `OWF_ID` is a concatenation of muninicpality words, using full words. |
 | **OWF_ID_Flag** | Data status of OWF_ID values; see more detail below. |
 | **PWS_ID** | [Public Water System](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::) identifier, to link Environmental Protection Agency and [Colorado Department of Public Health and Environment](https://www.colorado.gov/pacific/cdphe/data) datasets. |
 | **PWS_ID_Flag** | Data status of PWS_ID values; see more detail below. |
@@ -119,7 +120,8 @@ Cross-referencing identifiers were added when creating of the workbook.
 
 ### Identifier Conventions for OWF_ID ###
 
-The following conventions are used to create OWF_ID values from longer names.
+The following conventions are used to create `OWF_ID` values from longer names.
+See the `OWF_ID_Full` identifier for identifier that uses full words rather than abbreviations.
 
 | **Abbreviation** | **Long Version**
 | -- | -- |
@@ -192,8 +194,8 @@ Instead, import the file into a blank Excel file by selecting Data/Get External 
 ### Colorado-Municipalities.geojson Contents ###
 
 This file is the ***Municipality*** worksheet saved in GeoJSON format.
-This file should be viewable as a map in the GitHub repository.
-It can also be used in GIS or mapping applications.
+This file is viewable as a map in the GitHub repository.
+It can also be used in GIS and mapping applications.
 
 ### Municipality-Basin-Relate.csv Contents ###
 
@@ -289,7 +291,9 @@ OWF welcomes feedback to improve the dataset.
 
 ## License ##
 
-All the data are public so there are no restrictions on use.
+This dataset is distributed using the
+[Creative Commons Attribution-ShareAlike 4.0 International (CC BY-SA 4.0) License](https://creativecommons.org/licenses/by-sa/4.0/).
+Please provide attribution.
 
 ## Maintainers and Contributing ##
 
