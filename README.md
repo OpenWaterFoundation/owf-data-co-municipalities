@@ -107,7 +107,7 @@ Cross-referencing identifiers were added when creating of the workbook.
 | **PWS_ID_Flag** | Data status of PWS_ID values; see more detail below. |
 | **DWR_WaterDistrict_ID** | **TO BE ADDED** |
 | **DWR_WaterDistrict_ID_Flag** | **TO BE ADDED** |
-| **County_CSV** | County in which the municipality is contained. Several municipalities are in more than one county. In these cases, each county is listed in alphabetical order, separated by commas. Municipalities in multiple counties can also be found in the ***Municipality_County_Relate*** worksheet. |
+| **County_CSV** | County in which the municipality is contained. For municipalities that are in more than one county consistent with DOLA population data, counties are listed in alphabetical order, separated by commas. Municipalities in multiple counties can also be found in the ***Municipality_County_Relate*** worksheet. |
 | **NumCounty** | Number of counties within the municipality's boundaries. | This is a quick way to determine if the municipality is in multiple counties. |
 | **IBCC_Basin_CSV** | Interbasin Compact Committee (IBCC) basin in which the municipality is contained. Some municipalities are in more than one basin. In these cases, each basin is listed in alphabetical order, separated by commas.  Municipalities in multiple basins can also be found in the ***Municipality_Basin_Relate*** worksheet. |
 | **Num_IBCC_Basin** | Number of IBCC basins within the municipality's boundaries. This is a quick way to determine if the municipality is in multiple basins. |
