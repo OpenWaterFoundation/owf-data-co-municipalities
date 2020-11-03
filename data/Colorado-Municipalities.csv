@@ -33,7 +33,7 @@ Burlington,10600,G,2409946,G,32004,G,Burlington,Burlington,G,CO0132005,G,,x,Kit 
 Calhan,11260,G,2413149,G,21006,G,Calhan,Calhan,G,CO0121075,G,,x,El Paso,1,Arkansas,1,39.034657,-104.300010,,http://www.calhan.co/,G,New BNDSS ID; did not have an ID in original BNDSS
 Campo,11645,G,2413155,G,05003,G,Campo,Campo,G,CO0105100,G,,x,Baca,1,Arkansas,1,37.104712,-102.578798,,https://townofcampo.co/,G,
 Canon City,11810,G,2409976,G,22002,G,CanonCity,CanonCity,G,CO0122100,G,,x,Fremont,1,Arkansas,1,38.443058,-105.220215,,http://www.canoncity.org/,G,
-Carbonate,,M,,M,66636,G,Carbonate,Carbonate,G,,M,,x,Garfield,1,Colorado,1,39.744304,-107.339143,,http://www.carbonatecolorado.com/,G,New BNDSS ID; did not have an ID in original BNDSS
+Carbonate,12080,z,,M,66636,G,Carbonate,Carbonate,G,,M,,x,Garfield,1,Colorado,1,39.744304,-107.339143,,http://www.carbonatecolorado.com/,G,"New BNDSS ID; did not have an ID in original BNDSS, FIPS from DOLA but unverified"
 Carbondale,12045,G,2413166,G,23004,G,Carbondale,Carbondale,G,CO0123167,G,,x,Garfield,1,Colorado,1,39.394898,-107.214687,,http://www.carbondalegov.org/,G,
 Castle Pines,12387,G,2500981,G,65986,G,CastlePines,CastlePines,G,,M,,x,Douglas,1,Metro,1,39.462491,-104.870600,,http://www.castlepinesgov.com/,G,New BNDSS ID; did not have an ID in original BNDSS
 Castle Rock,12415,G,2413179,G,18003,G,CastleRock,CastleRock,G,CO0118010,G,,x,Douglas,1,Metro,1,39.376152,-104.853344,,http://crgov.com/,G,
