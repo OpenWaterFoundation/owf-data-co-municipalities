@@ -1163,8 +1163,8 @@
       "bbox": [-107.339143, 39.744304, -107.339143, 39.744304],
       "properties": {
         "MunicipalityName": "Carbonate",
-        "FIPS_ID": "",
-        "FIPS_ID_Flag": "M",
+        "FIPS_ID": "12080",
+        "FIPS_ID_Flag": "z",
         "GNIS_ID": null,
         "GNIS_ID_Flag": "M",
         "DOLA_LG_ID": "66636",
@@ -1185,7 +1185,7 @@
         "Lat_Long_Flag": "",
         "Website": "http://www.carbonatecolorado.com/",
         "Website_Flag": "G",
-        "Comment": "New BNDSS ID; did not have an ID in original BNDSS"
+        "Comment": "New BNDSS ID; did not have an ID in original BNDSS, FIPS from DOLA but unverified"
       },
       "geometry": {
         "type": "Point",
