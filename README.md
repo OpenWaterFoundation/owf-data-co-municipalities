@@ -1,8 +1,9 @@
 # owf-data-co-municipalities #
 
-This repository contains the [Open Water Foundation (OWF)](http://openwaterfoundation.org) dataset for Colorado municipalities.
+This repository contains the [Open Water Foundation (OWF)](https://openwaterfoundation.org) dataset for Colorado municipalities.
 This is a foundational dataset that provides unique identifiers and other data for municipalities.
-The identifiers can be used to link other datasets, such as population datasets and water providers that serve municipalities.
+The identifiers can be used to link other datasets,
+including population datasets and water providers that serve municipalities.
 OWF has created and is maintaining this dataset to facilitate work on various data analysis and visualization projects in Colorado. 
 
 The following sections provide a summary of the project repository:
@@ -34,9 +35,18 @@ The repository contains the following:
 .gitignore                                      Git configuration file to ignore files that should not be committed to the repository.
 README.md                                       Explanation of repository contents, data files and sources and
                                                 TSTool command files used to process the core data into other products.
-analysis/                                       TSTool software command files to process data into useful forms.
-  process-xlsx-to-csv.tstool                    TSTool command file that processes the core dataset from .xlsx to .csv.
-  process-xlsx-to-geojson.tstool                TSTool command file that processes the core dataset from .xlsx to .geojson.  
+data/                                           Folder containing data files.
+  co-municipalities.xlsx                        Simple Excel file containing core data.
+  co-municipalities.csv                         The Excel file contents from the Municipality worksheet
+                                                converted to a csv file, useful for automated processing.
+  co-municipalities.geojson                     The Excel file contents from the Municipality worksheet
+                                                converted to a geojson file, useful for mapping applications.
+  co-municipalities-basin-relate.csv            The Excel file contents from the Municipality_Basin_Relate worksheet
+                                                converted to a csv file, useful for automated processing.
+  co-municipalities-county-relate.csv           The Excel file contents from the Municipality_County_Relate worksheet
+                                                converted to a csv file, useful for automated processing.
+  co-municipalities-document-relate.csv         The Excel file contents from the Municipality_Document_Relate worksheet
+                                                converted to a csv file, useful for automated processing.
 data-orig/                                      Folder containing original data files downloaded from agency websites.
   Colorado-DOLA-LocalGovernment-Municipalities.tsv
                                                 Copy and pasted from:  https://dola.colorado.gov/lgis/municipalities.jsf
@@ -59,26 +69,17 @@ data-orig/                                      Folder containing original data 
                                                 Safe Drinking Water Information System containing PWS IDs.
   README.md                                     Explanation of folder contents, description of data files,
                                                 and the methodology used to obtain the data and mapping to the joined dataset
-data-orig-process/                              Folder containing files, such as TSTool command files,
+data-orig-workflow/                             Folder containing files, such as TSTool command files,
                                                 for processing original data into usable formats.
   downloads/                                    Dynamically-created folder for downloads, ignored from Git repository.
   process-original-data-to-csv.tstool           TSTool command file that processes files that are automatically downloaded
                                                 from websites and data files manually downloaded, which are incorporated
                                                 into the main dataset.
-data/                                           Folder containing data files.
-  Colorado-Municipalities.xlsx                  Simple Excel file containing core data.
-  Colorado-Municipalities.csv                   The Excel file contents from the Municipality worksheet
-                                                converted to a csv file, useful for automated processing.
-  Colorado-Municipalities.geojson               The Excel file contents from the Municipality worksheet
-                                                converted to a geojson file, useful for mapping applications.
-  Municipality-Basin-Relate.csv                 The Excel file contents from the Municipality_Basin_Relate worksheet
-                                                converted to a csv file, useful for automated processing.
-  Municipality-County-Relate.csv                The Excel file contents from the Municipality_County_Relate worksheet
-                                                converted to a csv file, useful for automated processing.
-  Municipality-Document-Relate.csv              The Excel file contents from the Municipality_Document_Relate worksheet
-                                                converted to a csv file, useful for automated processing.
 doc/                                            Additional documentation for the dataset.
-visualizations/                                 Files created for specific visualizations, being evaluated.
+workflow/                                       TSTool software command files to process data into useful forms.
+  01-convert-formats.tstool                     TSTool command file to convert the dataset from .xlsx to .csv and .geojson.
+x-visualizations/                               Files created for specific visualizations, being evaluated.
+                                                NO LONGER USED.
                                                 These files may be moved to other repositories that contain visualizations.
 z-local-notes/                                  Used for local notes, files are not committed to the repository.
 ```
@@ -123,17 +124,17 @@ Cross-referencing identifiers were added when creating of the workbook.
 The following conventions are used to create `OWF_ID` values from longer names.
 See the `OWF_ID_Full` identifier for identifier that uses full words rather than abbreviations.
 
-| **Abbreviation** | **Long Version**
-| -- | -- |
-| `Crk` | `Creek` |
-| `Hls` | `Hills` |
-| `Hts` | `Heights` |
-| `Mt` | `Mount` |
-| `Mtn` | `Mountain` |
-| `Spgs` | `Springs` |
-| `Vlg` | `Village` |
-| `Vly` | `Valley` |
-| `Ft` | `Fort` |
+| **Abbreviation** | **Long Version** |
+| ---------------- | ---------------- |
+| `Crk`            | `Creek`          |
+| `Ft`             | `Fort`           |
+| `Hls`            | `Hills`          |
+| `Hts`            | `Heights`        |
+| `Mt`             | `Mount`          |
+| `Mtn`            | `Mountain`       |
+| `Spgs`           | `Springs`        |
+| `Vlg`            | `Village`        |
+| `Vly`            | `Valley`         |
 
 ### Data Flags ###
 
@@ -143,7 +144,7 @@ These columns are an indication of data status as it relates to missing or estim
 The following conventions are used:
 
 | **Flag Value** | **Description** |
-| -- | -- |
+| --- | -- |
 | `G` | Value is a known/good value. |
 | `g` | Value is an estimated (but good) value.  The associated cell is also highlighted in yellow. |
 | `N` | Value is not applicable for the municipality and a blank cell is expected. |
@@ -185,33 +186,33 @@ Worksheets within the workbook are as follows:
 Files in the `data/` folder are created by exporting data from the `Colorado-Municipalities.xlsx` workbook as `csv` and `geojson` files.
 These files can be used directly without having to process the Excel file.
 
-### Colorado-Municipalities.csv Contents ###
+### `co-municipalities.csv` Contents ###
 
 This file is the ***Municipality*** worksheet saved in csv format.
 Warning:  if this file is opened directly in Excel, IDs that contain leading zeroes will not show those zeroes.
 Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
-### Colorado-Municipalities.geojson Contents ###
+### `co-municipalities.geojson Contents ###
 
 This file is the ***Municipality*** worksheet saved in GeoJSON format.
 This file is viewable as a map in the GitHub repository.
 It can also be used in GIS and mapping applications.
 
-### Municipality-Basin-Relate.csv Contents ###
+### `co-municipalities-basin-relate.csv` Contents ###
 
 This file is the ***Municipality_Basin_Relate*** worksheet saved in csv format.
 Warning:  if this file is opened directly in Excel,
 IDs that contain leading zeroes will not show those zeroes.
 Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
-### Municipality-County-Relate.csv Contents ###
+### `co-municipalities-county-relate.csv` Contents ###
 
 This file is the ***Municipality_County_Relate*** worksheet saved in csv format.
 Warning:  if this file is opened directly in Excel,
 IDs that contain leading zeroes will not show those zeroes.
 Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
-### Municipality-Document-Relate.csv Contents ###
+### `co-municipalities-document-relate.csv` Contents ###
 
 This file is the ***Municipality_Document_Relate*** worksheet saved in csv format.
 Warning:  if this file is opened directly in Excel,
@@ -222,8 +223,9 @@ Instead, import the file into a blank Excel file by selecting Data/Get External 
 
 The Colorado Municipalities dataset provides a complete statewide list of municipalities assembled from multiple sources.
 There are several unique identifiers for each municipality and the
-dataset allows cross-referencing the identifiers so that other datasets can be joined.  For example, the
-[Colorado Water Providers dataset](https://www.github.com/OpenWaterFoundation/owf-data-co-municipal-water-providers)
+dataset allows cross-referencing the identifiers so that other datasets can be joined.
+For example, the
+[Colorado Water Providers dataset](https://data.openwaterfoundation.org/state/co/co-municipal-water-providers) dataset
 uses the municipalities' identifiers and can be used to link additional data.
 In addition, organizations like the [Colorado Municipal League](https://www.cml.org/) may find the dataset
 useful and connections could be made to their data if any of these identifiers are used with their data.
@@ -261,22 +263,22 @@ however, some steps were initially performned manually.
     1. Manually populate the empty worksheets (some were added later as data were evaluated).
 2. Manually download `data-orig` files:
     1. `Colorado-DOLA-LocalGovernment-Municipalities.tsv` is copy and pasted from
-    [https://dola.colorado.gov/lgis/municipalities.jsf](https://dola.colorado.gov/lgis/municipalities.jsf)
-    to create a tab-delimited file.  The column headings were manually added.
-    The older `Colorado-DOLA-LocalGovt-IDs-Municipality.csv` was created similarly but is being phased out.
-    See the automated step below to create the corresponding `csv` file.
+       [https://dola.colorado.gov/lgis/municipalities.jsf](https://dola.colorado.gov/lgis/municipalities.jsf)
+       to create a tab-delimited file.  The column headings were manually added.
+       The older `Colorado-DOLA-LocalGovt-IDs-Municipality.csv` was created similarly but is being phased out.
+       See the automated step below to create the corresponding `csv` file.
     2. `Colorado-GNIS-Civil.psv` was creating by manually downloading from
-    [https://geonames.usgs.gov/apex/f?p=138:1::::::](https://geonames.usgs.gov/apex/f?p=138:1::::::)
-    using `State=Colorado` and `Feature Class:Civil` (all other fields have default values).
-    After querying, save to `Colorado-GNIS-Civil.psv` (pipe-separated-value).
-    This file contains municipalities, counties, and other local government entities.
-    See the automated step below to create the corresponding `csv` file.
+       [https://geonames.usgs.gov/apex/f?p=138:1::::::](https://geonames.usgs.gov/apex/f?p=138:1::::::)
+       using `State=Colorado` and `Feature Class:Civil` (all other fields have default values).
+       After querying, save to `Colorado-GNIS-Civil.psv` (pipe-separated-value).
+       This file contains municipalities, counties, and other local government entities.
+       See the automated step below to create the corresponding `csv` file.
     3. `Colorado-PWS-IDs.csv` was created by manually downloading from
-    [https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::)
-    using `Select a Report=Water System Summary` and `Primacy Agency=Colorado` (all other fields have default values).
-    The file was saved as `Colorado-PWS-IDs.csv`.
+       [https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::](https://ofmpub.epa.gov/apex/sfdw/f?p=108:1:::NO:::)
+       using `Select a Report=Water System Summary` and `Primacy Agency=Colorado` (all other fields have default values).
+       The file was saved as `Colorado-PWS-IDs.csv`.
 3. Automate download and process `data-orig` files.
-Run `data-orig-process/process-original-data-to-csv.tstool`, which creates:
+   Run `data-orig-process/process-original-data-to-csv.tstool`, which creates:
     * `data-orig/Colorado-DOLA-LocalGovernment-Municipalities.csv` - DOLA municipalities
     * `data-orig/Colorado-FIPS-Places.csv` - FIPS places including municipalities
     * `data-orig/Colorado-GNIS-Civil.csv` - GNIS civil places including municipalities and counties

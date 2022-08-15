@@ -1,0 +1,37 @@
+# Convert municipality data from Excel to other formats.
+StartLog(LogFile="01-convert-formats.tstool.log")
+#
+# -------------------------------------------------------------------
+# Convert municipality data from Excel to geojson format:
+# - filter out rows with empty MunicipalityName in case there are extra non-data rows
+# - output precision is 6 digits
+# SetDebugLevel(LogFileLevel=1)
+ReadTableFromExcel(TableID="Municipalities",InputFile="../data/co-municipalities.xlsx",Worksheet="Municipality",ExcelColumnNames=FirstRowInRange,ColumnExcludeFilters="MunicipalityName:",ExcelIntegerColumns="GNIS_ID,Num_IBCC_Basin,NumCounty",ExcelTextColumns="FIPS_ID,DOLA_LG_ID")
+SetDebugLevel(ScreenLevel=0,LogFileLevel=0)
+WriteTableToGeoJSON(TableID="Municipalities",OutputFile="../data/co-municipalities.geojson",LongitudeColumn="Longitude",LatitudeColumn="Latitude",CoordinatePrecision=6)
+#
+# Filter dataset to only include municipalities in the South Platte and Metro basins:
+# - this is no longer used since InfoMapper is used for visualizations
+#CopyTable(TableID="Municipalities",NewTableID="Municipalities-SP-Metro",ColumnFilters="IBCC_Basin_CSV:*South Platte*")
+#CopyTable(TableID="Municipalities",NewTableID="Municipalities-Metro",ColumnFilters="IBCC_Basin_CSV:*Metro*")
+#AppendTable(TableID="Municipalities-SP-Metro",AppendTableID="Municipalities-Metro")
+# Save dataset to GeoJSON for use in map of municipalities in the South Platte and Metro basins.
+#WriteTableToGeoJSON(TableID="Municipalities-SP-Metro",OutputFile="..\visualizations\Colorado-Municipalities-SouthPlatteMetro.geojson",LongitudeColumn="Longitude",LatitudeColumn="Latitude",CoordinatePrecision=6,JavaScriptVar="Municipality")
+#
+# -------------------------------------------------------------------
+# Convert municipality data from Excel to csv format:
+# - save separate files for the relationship tables
+WriteTableToDelimitedFile(TableID="Municipalities",OutputFile="../data/co-municipalities.csv",WriteHeaderComments=False)
+#
+# "Municipality_County_Relate" worksheet
+ReadTableFromExcel(TableID="Municipality-County",InputFile="../data/co-municipalities.xlsx",Worksheet="Municipality_County_Relate",ExcelColumnNames=FirstRowInRange,ColumnExcludeFilters="MunicipalityName:",ExcelTextColumns="DOLA_LG_ID")
+WriteTableToDelimitedFile(TableID="Municipality-County",OutputFile="../data/co-municipalities-county-relate.csv",WriteHeaderComments=False)
+#
+# "Municipality_Basin_Relate" worksheet
+ReadTableFromExcel(TableID="Municipality-Basin",InputFile="../data/co-municipalities.xlsx",Worksheet="Municipality_Basin_Relate",ExcelColumnNames=FirstRowInRange,ColumnExcludeFilters="MunicipalityName:",ExcelTextColumns="DOLA_LG_ID")
+WriteTableToDelimitedFile(TableID="Municipality-Basin",OutputFile="../data/co-municipalities-basin-relate.csv",WriteHeaderComments=False)
+#
+# "Municipality_Document_Relate" worksheet
+ReadTableFromExcel(TableID="Municipality-Document",InputFile="../data/co-municipalities.xlsx",Worksheet="Municipality_Document_Relate",ExcelColumnNames=FirstRowInRange,ColumnExcludeFilters="MunicipalityName:",ExcelIntegerColumns="PublicationDate",ExcelTextColumns="DOLA_LG_ID")
+WriteTableToDelimitedFile(TableID="Municipality-Document",OutputFile="../data/co-municipalities-document-relate.csv",WriteHeaderComments=False)
+#
