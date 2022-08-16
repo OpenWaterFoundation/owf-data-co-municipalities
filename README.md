@@ -192,7 +192,7 @@ This file is the ***Municipality*** worksheet saved in csv format.
 Warning:  if this file is opened directly in Excel, IDs that contain leading zeroes will not show those zeroes.
 Instead, import the file into a blank Excel file by selecting Data/Get External Data/From Text.
 
-### `co-municipalities.geojson Contents ###
+### `co-municipalities.geojson` Contents ###
 
 This file is the ***Municipality*** worksheet saved in GeoJSON format.
 This file is viewable as a map in the GitHub repository.
