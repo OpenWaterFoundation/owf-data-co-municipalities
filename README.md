@@ -6,6 +6,11 @@ The identifiers can be used to link other datasets,
 including population datasets and water providers that serve municipalities.
 OWF has created and is maintaining this dataset to facilitate work on various data analysis and visualization projects in Colorado. 
 
+Other repositories provide access to related data, including:
+
+* [Colorado Municipal Boundaries](https://github.com/OpenWaterFoundation/owf-data-co-municipal-boundaries)
+* [Colorado Population](https://github.com/OpenWaterFoundation/owf-data-co-dola-population)
+
 The following sections provide a summary of the project repository:
 
 * [Repository Contents](#repository-contents)
